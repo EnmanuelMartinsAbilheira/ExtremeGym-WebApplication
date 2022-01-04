@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Extreme Gym</title>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+
+</head>
+<body class="color-fondo">
+
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/index.htm">
+                    <img class="imagen-gym" src="build/img/logomejor.webp" alt="logotipo de Extreme Gym"> 
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.htm">Nosotros</a>
+                    <a href="productos.htm">Productos</a>
+                    <a href="imagenes.htm">Imagenes</a>
+                    <a href="exercicios.htm">Exercicios</a>
+                    <a href="contacto.htm">Contacto</a>
+                </nav>
+                
+            </div> <!--.barra-->
+
+        </div>
+    </header>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    
+    <main class="contenedor seccion">
+
+        <h1>Onde Localizarnos?</h1>
+
+        <div class="contenido-nosotros">
+
+            <div id="mapa" class="mapa"></div>
+
+            <div class="imagen">
+                <picture>
+                    <source srcset="build/img/entradaA.webp" type="image/webp">
+                    <source srcset="build/img/entradaA.png" type="image/png">
+                    <img loading="lazy" src="build/img/entradaA.png" alt="Entrada gym">
+                </picture>
+            </div>
+
+        </div>
+
+        <div class="texto-nosotros">
+            <blockquote>
+                4 anos e muitos mais vao a vir 
+            </blockquote>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorum obcaecati id dolor ut architecto aliquam eos quibusdam facilis! At nemo vel nesciunt quibusdam necessitatibus? Nisi nulla culpa dolorem laboriosam.</p>
+        </div>
+
+        <!-- <section class="section-scrolling">
+            <div class="texto-scrolling">
+                <h2 style="--i:0.5"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+                <h2 style="--i:1.5"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+                <h2 style="--i:2.0"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+                <h2 style="--i:1.65"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+                <h2 style="--i:1.25"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+                <h2 style="--i:0.25"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+                <h2 style="--i:0.75"><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span><span>Extreme Gym 2022</span></h2>
+            </div>
+        </section> -->
+
+        <!-- <script>
+            const position = document.documentElement;
+            position.addEventListener("mousemove", e=> {
+                position.style.setProperty('--x', e.clientX + 'px');
+            })
+        </script> -->
+
+    </main>
+
+    <footer class="footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="Nosotros.htm">Nosotros</a>
+                <a href="Productos.htm">Productos</a>
+                <a href="Imagenes.htm">Imagenes</a>
+                <a href="Exercicios.htm">Exercicios</a>
+                <a href="Contactanos.htm">Contactanos</a>
+            </nav>
+        </div>
+
+        <p class="copyright">Todos los Derechos Reservados 2021@copyright</p>
+    </footer>
+    
+    <script src="build/js/bundle.min.js"></script>
+
+</body>
+</html>

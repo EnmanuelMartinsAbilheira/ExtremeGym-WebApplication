@@ -1,0 +1,21 @@
+
+@include tablet{
+    .iconos-nosotros{
+        @include grid(4, 2rem); // 4 iconos con 20 px de tamaño
+    }
+}
+
+.icono{
+    //---- ESTILOS COLOCAR ICONOS ESTILOS MIOS
+    border-radius: 6rem 6rem 2rem 3rem;
+    background-color: hsla(0, 0%, 43%, 0.12);
+    //---- ESTILOS COLOCAR ICONOS ESTILOS MIOS
+
+    img{
+        height: 10rem;
+
+    }
+    h3{
+        text-transform: uppercase;
+    }
+}

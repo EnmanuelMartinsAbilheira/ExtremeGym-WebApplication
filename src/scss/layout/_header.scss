@@ -1,0 +1,69 @@
+.no-webp .inicio{
+    height: auto;
+    width: auto;
+    background-image: url(../../../build/img/incognito-man-building-biceps-with-barbell.png);
+}
+.webp .inicio{
+    background-image: url(../../../build/img/incognito-man-building-biceps-with-barbell.webp);
+}
+
+.imagen-gym{
+    width: 130px;
+    height: 100px;
+}
+
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+
+    &.inicio{
+
+        background-position: center center;
+        background-size: cover;
+        
+        @include tablet{
+            min-height: 70rem;
+        }
+
+        .contenido-header{
+            @include tablet{
+                min-height: 70rem;
+            }
+        }
+    }
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1{
+        text-align: left;
+        color: $blanco;
+        font-weight: $bold;
+        line-height: 2;
+        max-width: 60rem;
+    }
+}
+
+//--- h1 cambiar texto a varios del inicio 
+
+//--- h1 cambiar texto a varios del inicio 
+
+//---- ESTILOS COLOCAR fondo ESTILOS MIOS
+.color-fondo{
+    background-color: rgba(235, 235, 235, 0.61);
+}
+
+//---- ESTILOS COLOCAR fondo ESTILOS MIOS
+
+//---- DIMENSIONES DEL MAPA BORDER Y FONDO
+.mapa {
+    height: 420px;
+    width: 650px;
+    border-radius: $separacion;
+    background-color: green;
+}
+
+//---- DIMENSIONES DEL MAPA BORDER Y FONDO--

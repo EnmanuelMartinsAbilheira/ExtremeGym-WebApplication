@@ -1,0 +1,30 @@
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.alinear-derecha{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+// estilo al titulo producto index esto lo coloquer yo
+.titulo-producto{
+
+    margin: 0;
+    line-height: 1.4;
+
+    &::after{
+        content: '';
+        display: block;
+        width: 15;
+        height: .5rem;
+        background-color: $verde;
+        margin: 0.5rem 31rem 1rem 31rem;
+    }
+}
+// estilo al titulo producto index esto lo coloquer yo
