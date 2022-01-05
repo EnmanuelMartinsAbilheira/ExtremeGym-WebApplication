@@ -7,6 +7,41 @@
     background-image: url(../../../build/img/incognito-man-building-biceps-with-barbell.webp);
 }
 
+//h1 multiples nombres de la pagina index 
+.wrapper h1{
+    //padding: 0;
+    //margin: 0;  
+    color: $blanco;
+    text-shadow: 0 5px 0 rgba(0, 0, 0, 0.5);
+    font-size: 4.5rem;
+    font-family: poppins;
+}
+span:before{
+    content: '';
+    animation: animate infinite 12s;
+}
+@keyframes animate{
+    0%{
+        content: 'Extreme Gym Fit';
+    }
+    20%{
+        content: 'Melhor Gym que nos NAO Existe'; 
+    }
+    40%{
+        content: 'Agora so por 0,70€ ao dia';
+    }
+    60%{
+        content: 'Plano de Treino e Avaliacoes Fisicas Incluidas';
+    }
+    80%{
+        content: 'Abertos de Segunda-feira a Sabado das 8:00 as 22:30';
+    }
+    100%{
+        content: 'Extreme Gym Venha Ja Nao se vai Arrepenter';
+    }
+}
+
+
 .imagen-gym{
     width: 130px;
     height: 100px;
