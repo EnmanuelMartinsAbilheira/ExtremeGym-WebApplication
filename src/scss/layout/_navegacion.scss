@@ -5,6 +5,74 @@
     @include tablet{
         flex-direction: row;
         justify-content: space-between;
+
+        //------ EFECTOS DECORACION NAVEWGACIONß
+        .navEffect{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navEffect .navEffect-a{
+            position: relative;
+            display: inline-block;
+            background: #fff;
+        }
+
+        .navEffect .navEffect-a:before,
+        .navEffect .navEffect-a:after{
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: #f00;
+            transition: 0.5;
+        }
+
+
+        .navEffect .navEffect-a:nth-child(1):before,
+        .navEffect .navEffect-a:nth-child(1):after{
+            background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
+        }
+        .navEffect .navEffect-a:nth-child(2):before,
+        .navEffect .navEffect-a:nth-child(2):after{
+            background: linear-gradient(45deg, #ff0080, #0e1538, #0e1538, #00d412);
+        }
+        .navEffect .navEffect-a:nth-child(3):before,
+        .navEffect .navEffect-a:nth-child(3):after{
+            background: linear-gradient(45deg, #ffe600, #0e1538, #0e1538, #00d4d4);
+        }
+        .navEffect .navEffect-a:nth-child(4):before,
+        .navEffect .navEffect-a:nth-child(4):after{
+            background: linear-gradient(45deg, #ff0037, #0e1538, #0e1538, #00d4c2);
+        }
+        .navEffect .navEffect-a:nth-child(5):before,
+        .navEffect .navEffect-a:nth-child(5):after{
+            background: linear-gradient(45deg, #2f00ff, #0e1538, #0e1538, #d40075);
+        }
+
+        .navEffect .navEffect-a:hover:before{
+            inset: -3px;
+        }
+        .navEffect .navEffect-a:hover:after{
+            inset: -3px;
+            filter: blur(10px);
+        }
+        .navEffect .navEffect-a span{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            background: #333333;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+            color: #fff;
+        }
     }
 }
 
@@ -33,70 +101,3 @@
 }
 
 
-//------ EFECTOS DECORACION NAVEWGACIONß
-.navEffect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navEffect a{
-    position: relative;
-    display: inline-block;
-    background: #fff;
-}
-
-.navEffect a:before,
-.navEffect a:after{
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: #f00;
-    transition: 0.5;
-}
-
-
-.navEffect a:nth-child(1):before,
-.navEffect a:nth-child(1):after{
-    background: linear-gradient(45deg, #00ccff, #0e1538, #0e1538, #d400d4);
-}
-.navEffect a:nth-child(2):before,
-.navEffect a:nth-child(2):after{
-    background: linear-gradient(45deg, #ff0080, #0e1538, #0e1538, #00d412);
-}
-.navEffect a:nth-child(3):before,
-.navEffect a:nth-child(3):after{
-    background: linear-gradient(45deg, #ffe600, #0e1538, #0e1538, #00d4d4);
-}
-.navEffect a:nth-child(4):before,
-.navEffect a:nth-child(4):after{
-    background: linear-gradient(45deg, #ff0037, #0e1538, #0e1538, #00d4c2);
-}
-.navEffect a:nth-child(5):before,
-.navEffect a:nth-child(5):after{
-    background: linear-gradient(45deg, #2f00ff, #0e1538, #0e1538, #d40075);
-}
-
-.navEffect a:hover:before{
-    inset: -3px;
-}
-.navEffect a:hover:after{
-    inset: -3px;
-    filter: blur(10px);
-}
-.navEffect a span{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    background: #333333;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    letter-spacing: 1px;
-    color: #fff;
-}
