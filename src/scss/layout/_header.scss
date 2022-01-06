@@ -18,26 +18,32 @@
 }
 .wrapper-h1-span:before{
     content: '';
-    animation: animate infinite 12s;
+    animation: animate infinite 15s;
 }
 @keyframes animate{
     0%{
-        content: 'Extreme Gym Fit';
+        font-size: 4.5rem;
+        content: ' Extreme Gym Fit';
     }
     20%{
+        font-size: 4.5rem;
         content: 'Melhor Gym que nos NAO Existe'; 
     }
     40%{
-        content: 'Agora so por 0,70€ ao dia';
+        font-size: 4.5rem;
+        content: 'Treine so por 0,65€ ao dia';
     }
     60%{
+        font-size: 4.5rem;
         content: 'Plano de Treino e Avaliacoes Fisicas Incluidas';
     }
     80%{
+        font-size: 3.5rem;
         content: 'Abertos de Segunda-feira a Sabado das 8:00 as 22:30';
     }
     100%{
-        content: 'Extreme Gym Venha Ja Nao se vai Arrepenter';
+        font-size: 4.5rem;
+        content: 'Venha Ja Nao se vai Arrepenter';
     }
 }
 
@@ -92,13 +98,3 @@
 }
 
 //---- ESTILOS COLOCAR fondo ESTILOS MIOS
-
-//---- DIMENSIONES DEL MAPA BORDER Y FONDO
-.mapa {
-    height: 420px;
-    width: 650px;
-    border-radius: $separacion;
-    background-color: green;
-}
-
-//---- DIMENSIONES DEL MAPA BORDER Y FONDO--
