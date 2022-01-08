@@ -2,6 +2,9 @@
     .contenedor-anuncios{
         @include grid(3, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
     }
+    .contenedor-exercicios{
+        @include grid(5, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
+    }
 }
 
 .anuncio{
@@ -23,13 +26,13 @@
         margin: 0;
     }
 
-    .precio{
-        color: $verde;
-        font-weight: $bold;
-        font-size: 3rem;
-    }
 }
 
+.precio{
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
 .iconos-caracteristicas{
     display: flex;
     list-style: none;
