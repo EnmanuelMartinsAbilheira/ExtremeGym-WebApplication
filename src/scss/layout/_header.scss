@@ -18,12 +18,12 @@
 }
 .wrapper-h1-span:before{
     content: '';
-    animation: animate infinite 15s;
+    animation: animate infinite 18s;
 }
 @keyframes animate{
     0%{
         font-size: 4.5rem;
-        content: ' Extreme Gym Fit';
+        content: ' Fit';
     }
     20%{
         font-size: 4.5rem;
@@ -38,12 +38,12 @@
         content: 'Plano de Treino e Avaliacoes Fisicas Incluidas';
     }
     80%{
-        font-size: 3.5rem;
-        content: 'Abertos de Segunda-feira a Sabado das 8:00 as 22:30';
-    }
-    100%{
         font-size: 4.5rem;
         content: 'Venha Ja Nao se vai Arrepenter';
+    }
+    100%{
+        font-size: 3.5rem;
+        content: 'Abertos de Segunda-feira a Sabado das 8:00 as 22:30';
     }
 }
 

@@ -1,40 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Extreme Gym</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+<?php include 'includes/templates/header.php' ?>
 
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/index.htm">
-                    <img class="imagen-gym" src="build/img/logomejor.webp" alt="logotipo de Extreme Gym"> 
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu ">
-                </div>
-    
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion navEffect">
-                        <a class="navEffect-a" href="nosotros.htm"><span>Nosotros</span></a>
-                        <a class="navEffect-a" href="productos.htm"><span>Productos</span></a>
-                        <a class="navEffect-a" href="imagenes.htm"><span>Imagenes</span></a>
-                        <a class="navEffect-a" href="exercicios.htm"><span>Exercicios</span></a>
-                        <a class="navEffect-a" href="contacto.htm"><span>Contacto</span></a>
-                    </nav>
-                </div>
-    
-            </div> <!--.barra-->
-
-        </div>
-    </header>
 
     <main>
         <div class="contenedor seccion">
@@ -56,7 +21,7 @@
                         <p>Sabor banana para un mejor post entrenamiento</p>
                         <p class="precio">$19,98</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -75,7 +40,7 @@
                         <p>Para un mayor treino de musculatura noGym</p>
                         <p class="precio">$32,55</p> 
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -94,7 +59,7 @@
                         <p>o melhor reforco que podes ter é este</p>
                         <p class="precio">$35,98</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -120,7 +85,7 @@
                         <p>Mais energia para todo el entrenamiento</p>
                         <p class="precio">$15,98</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -139,7 +104,7 @@
                         <p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>
                         <p class="precio">$15,98</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -158,7 +123,7 @@
                         <p>Mais energia para todo el entrenamiento uma ayuda para ter a energia toda no treino</p>
                         <p class="precio">$21,25</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -185,7 +150,7 @@
                         <p>Mais energia para todo el entrenamiento uma ayuda para ter a energia toda no treino</p>
                         <p class="precio">$21,25</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -212,7 +177,7 @@
                         <p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>
                         <p class="precio">$15,98</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -239,7 +204,7 @@
                         <p>Mais energia para todo el entrenamiento uma ayuda para ter a energia toda no treino</p>
                         <p class="precio">$21,25</p>
 
-                        <a href="producto.htm" class="boton-verde-block">Ver Producto</a>
+                        <a href="producto.php" class="boton-verde-block">Ver Producto</a>
 
                     </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
@@ -252,11 +217,11 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="Nosotros.htm">Nosotros</a>
-                <a href="Productos.htm">Productos</a>
-                <a href="Imagenes.htm">Imagenes</a>
-                <a href="Exercicios.htm">Exercicios</a>
-                <a href="Contactanos.htm">Contactanos</a>
+                <a href="Nosotros.php">Nosotros</a>
+                <a href="Productos.php">Productos</a>
+                <a href="Imagenes.php">Imagenes</a>
+                <a href="Exercicios.php">Exercicios</a>
+                <a href="Contactanos.php">Contactanos</a>
             </nav>
         </div>
 

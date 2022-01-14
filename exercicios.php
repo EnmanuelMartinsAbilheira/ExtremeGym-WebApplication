@@ -1,46 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Extreme Gym</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+<?php include 'includes/templates/header.php' ?>
 
-    <header class="header">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/index.htm">
-                    <img class="imagen-gym" src="build/img/logomejor.webp" alt="logotipo de Extreme Gym"> 
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu ">
-                </div>
-    
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion navEffect">
-                        <a class="navEffect-a" href="nosotros.htm"><span>Nosotros</span></a>
-                        <a class="navEffect-a" href="productos.htm"><span>Productos</span></a>
-                        <a class="navEffect-a" href="imagenes.htm"><span>Imagenes</span></a>
-                        <a class="navEffect-a" href="exercicios.htm"><span>Exercicios</span></a>
-                        <a class="navEffect-a" href="contacto.htm"><span>Contacto</span></a>
-                    </nav>
-                </div>
-    
-            </div> <!--.barra-->
-
-        </div>
-    </header>
 
     <main>
         <div class="contenedor seccion">
             <h2 class="titulo-producto">Cardio</h2>
 
             <div class="contenedor-exercicios">
+
+                <!--producto 100%-->
+                <div class="anuncio">
+                    <picture>
+                        <source srcset="build/img/zumub.webp" type="image/webp">
+                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
+                    </picture>
+                
+
+                    <div class="contenido-anuncio">
+                        <h3>100% WHEY</h3>
+                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                    </div> <!-- .contenido-anuncio -->
+                </div> <!-- .anuncio -->
+
+                <!--producto 100%-->
+                <div class="anuncio">
+                    <picture>
+                        <source srcset="build/img/zumub.webp" type="image/webp">
+                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
+                    </picture>
+                
+
+                    <div class="contenido-anuncio">
+                        <h3>100% WHEY</h3>
+                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                    </div> <!-- .contenido-anuncio -->
+                </div> <!-- .anuncio -->
+
+                <!--producto 100%-->
+                <div class="anuncio">
+                    <picture>
+                        <source srcset="build/img/zumub.webp" type="image/webp">
+                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
+                    </picture>
+                
+
+                    <div class="contenido-anuncio">
+                        <h3>100% WHEY</h3>
+                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                    </div> <!-- .contenido-anuncio -->
+                </div> <!-- .anuncio -->
+
+                <!--producto 100%-->
+                <div class="anuncio">
+                    <picture>
+                        <source srcset="build/img/zumub.webp" type="image/webp">
+                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
+                    </picture>
+                
+
+                    <div class="contenido-anuncio">
+                        <h3>100% WHEY</h3>
+                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                    </div> <!-- .contenido-anuncio -->
+                </div> <!-- .anuncio -->
 
                 <!--producto 100%-->
                 <div class="anuncio">
@@ -81,7 +110,25 @@
                         <!--<p>Mais energia para todo el entrenamiento</p>-->
 
                     </div> <!-- .contenido-anuncio -->
+                </div> <!-- .anuncio --> 
+
+
+                <!--producto 100%-->
+                <div class="anuncio">
+                    <picture>
+                        <source srcset="build/img/zumub.webp" type="image/webp">
+                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
+                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
+                    </picture>
+                
+
+                    <div class="contenido-anuncio">
+                        <h3>100% WHEY</h3>
+                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                    </div> <!-- .contenido-anuncio -->
                 </div> <!-- .anuncio -->
+
 
 
             </div> <!-- .conteniedor-exercicios -->
@@ -293,11 +340,11 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="Nosotros.htm">Nosotros</a>
-                <a href="Productos.htm">Productos</a>
-                <a href="Imagenes.htm">Imagenes</a>
-                <a href="Exercicios.htm">Exercicios</a>
-                <a href="Contactanos.htm">Contactanos</a>
+                <a href="Nosotros.php">Nosotros</a>
+                <a href="Productos.php">Productos</a>
+                <a href="Imagenes.php">Imagenes</a>
+                <a href="Exercicios.php">Exercicios</a>
+                <a href="Contactanos.php">Contactanos</a>
             </nav>
         </div>
 

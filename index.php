@@ -12,7 +12,7 @@
     <header class="header inicio">
         <div class="contenedor contenido-header">
             <div class="barra">
-                <a href="/index.htm">
+                <a href="/index.php">
                     <img class="imagen-gym" src="build/img/logomejor.webp" alt="logotipo de Extreme Gym"> 
                 </a>
 
@@ -23,11 +23,11 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="build/img/dark-mode.svg">
                    <nav class="navegacion">
-                        <a href="nosotros.htm">Nosotros</a>
-                        <a href="productos.htm">Productos</a>
-                        <a href="imagenes.htm">Imagenes</a>
-                        <a href="exercicios.htm">Exercicios</a>
-                        <a href="contacto.htm">Contacto</a>
+                        <a href="nosotros.php">Nosotros</a>
+                        <a href="productos.php">Productos</a>
+                        <a href="imagenes.php">Imagenes</a>
+                        <a href="exercicios.php">Exercicios</a>
+                        <a href="contacto.php">Contacto</a>
                     </nav> 
                 </div>
                 
@@ -35,7 +35,7 @@
             </div> <!--.barra-->
 
             <div class="wrapper">
-                <h1>Extrem Gym <span class="wrapper-h1-span"></span></h1>
+                <h1>Extreme Gym <span class="wrapper-h1-span"></span></h1>
             </div>
         </div >
     </header>
@@ -86,7 +86,7 @@
 
                 
 
-                    <a href="anuncio.htm" class="boton-verde-block">Ver Producto</a>
+                    <a href="anuncio.php" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
@@ -119,7 +119,7 @@
                         </li>
                     </ul> -->
 
-                    <a href="anuncio.htm" class="boton-verde-block">Ver Producto</a>
+                    <a href="anuncio.php" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
@@ -139,21 +139,21 @@
 
                 
 
-                    <a href="anuncio.htm" class="boton-verde-block">Ver Producto</a>
+                    <a href="anuncio.php" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
         </div> <!-- .conteniedor-anuncios -->
 
         <div class="alinear-derecha">
-            <a href="anuncios.htm" class="boton-verde">Ver Todos Los Productos</a>
+            <a href="anuncios.php" class="boton-verde">Ver Todos Los Productos</a>
         </div>
     </section>
 
     <seccion class="imagen-contacto">
         <h2>Tienes Alguna duda al Respecto de nosotros?</h2>
         <p>Puedes entrar en com unicacion con nosotros para ayudarte en lo que necesitas en tus ejercicios como dietas</p>
-        <a href="contacto.htm" class="boton-verde">Contactanos</a>
+        <a href="contacto.php" class="boton-verde">Contactanos</a>
     </seccion>
 
     <div class="contenedor seccion seccion-inferior">
@@ -170,7 +170,7 @@
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="exercicios.htm">
+                    <a href="exercicios.php">
                         <h4>NordickTrack Remo Cardio</h4>
                         <p>Ejercicio: <span>Cardio</span> </p>
 
@@ -191,7 +191,7 @@
                 </div>
 
                 <div class="texto-entrada">
-                    <a href="exercicios.htm">
+                    <a href="exercicios.php">
                         <h4>Bicicleta Cardio</h4>
                         <p>Ejercicio: <span>Cardio</span> </p>
 
@@ -218,11 +218,11 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="Nosotros.htm">Nosotros</a>
-                <a href="Productos.htm">Productos</a>
-                <a href="Imagenes.htm">Imagenes</a>
-                <a href="Exercicios.htm">Exercicios</a>
-                <a href="Contactanos.htm">Contactanos</a>
+                <a href="Nosotros.php">Nosotros</a>
+                <a href="Productos.php">Productos</a>
+                <a href="Imagenes.php">Imagenes</a>
+                <a href="Exercicios.php">Exercicios</a>
+                <a href="Contactanos.php">Contactanos</a>
             </nav>
         </div>
 
