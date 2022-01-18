@@ -1,4 +1,9 @@
-<?php include 'includes/templates/header.php' ?>
+<?php
+    $navEffect = true;
+    $inicio =false;
+    require 'includes/funciones.php';
+    include 'includes/templates/header.php' 
+?>
 
 
     <main class="contenedor seccion contenido-centrado">

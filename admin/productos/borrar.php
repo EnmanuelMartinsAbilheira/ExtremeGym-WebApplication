@@ -1,13 +1,13 @@
 <?php
     $navEffect = true;
     $inicio =false;
-    require 'includes/funciones.php';
-    include 'includes/templates/header.php' 
+    require '../../includes/funciones.php';
+    include '../../includes/templates/header.php' 
 ?>
 
 
     <main class="contenedor seccion">
-        <h1>--Base--</h1>
+        <h1>--Eliminar--</h1>
     </main>
 
 

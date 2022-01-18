@@ -1,7 +1,42 @@
+@include telefono{
+    .iconos-7dias{
+        @include grid(2, 2rem); // 4 iconos con 20 px de tamaño
+    }
+    @include tablet{
+        .iconos-nosotros{
+            @include grid(4, 2rem); // 4 iconos con 20 px de tamaño
+        }
+        .iconos-7dias{
+            @include grid(4, 2rem); // 4 iconos con 20 px de tamaño
+        }
+    }
+}
 
-@include tablet{
-    .iconos-nosotros{
-        @include grid(4, 2rem); // 4 iconos con 20 px de tamaño
+.icono_dias{
+    border-radius: $separacion;
+    background-color: hsla(0, 0%, 43%, 0.12);
+    p{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        border-radius: $separacion;
+    }
+
+    
+    h3{
+        text-size-adjust: 1rem;
+        text-transform: uppercase;
+        margin: 5px;
+        line-height: 1.4;
+
+        &::after{
+            content: '';
+            display: block;
+            height: .2rem;
+            width: auto;
+            background-color: red;
+            margin-top: 1rem;
+        }
     }
 }
 

@@ -1,44 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Extreme Gym</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
-
-    <header class="header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/index.php">
-                    <img class="imagen-gym" src="build/img/logomejor.webp" alt="logotipo de Extreme Gym"> 
-                </a>
-
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="icono menu ">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                   <nav class="navegacion">
-                        <a href="nosotros.php">Nosotros</a>
-                        <a href="productos.php">Productos</a>
-                        <a href="imagenes.php">Imagenes</a>
-                        <a href="exercicios.php">Exercicios</a>
-                        <a href="contacto.php">Contacto</a>
-                    </nav> 
-                </div>
-                
-                
-            </div> <!--.barra-->
-
-            <div class="wrapper">
-                <h1>Extreme Gym <span class="wrapper-h1-span"></span></h1>
-            </div>
-        </div >
-    </header>
+<?php
+    $navEffect = false;
+    require 'includes/funciones.php';
+    incluirTemplate('header', $inicio = true);
+?>
 
     <main class="contenedor seccion">
         <h1>As 4 Principais Coisas de um Treino</h1>
@@ -71,6 +35,7 @@
         <h2 class="titulo-producto">Los Mejores Productos Vendidos Son</h2>
 
         <div class="contenedor-anuncios">
+
             <div class="anuncio">
                 <picture>
                     <source srcset="build/img/zumub.webp" type="image/webp">
@@ -150,11 +115,71 @@
         </div>
     </section>
 
-    <seccion class="imagen-contacto">
+
+    <h2 class="titulo-producto">Nosso Horario</h2>
+    <div class="iconos-7dias">
+        <div class="icono_dias">
+            <h3>segunda</h3>
+            <p>Abrimos: 8:00 AM <br> Boxeo: 18:45 <br> Fechamos 22:00PM  </p>
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+        <div class="icono_dias">
+            <h3>terca</h3>
+            <p>Abrimos: 8:00 AM <br>  <br> Fechamos 22:00PM  </p>
+
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+        <div class="icono_dias">
+            <h3>quarta</h3>
+            <p>Abrimos: 8:00 AM <br> HIIT: 18:45 <br> Fechamos 22:00PM  </p>
+
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+        <div class="icono_dias">
+            <h3>quinta</h3>
+            <p>Abrimos: 8:00 AM <br>  <br> Fechamos 22:00PM  </p>
+
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+        <div class="icono_dias">
+            <h3>sexta</h3>
+            <p>Abrimos: 8:00 AM <br> BodyJump <br> Fechamos 22:00PM  </p>
+
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+        <div class="icono_dias">
+            <h3>sabado</h3>
+            <p>Abrimos: 8:00 AM <br> <br> Fechamos 22:00PM  </p>
+
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+        <div class="icono_dias">
+            <h3>domingo</h3>
+            <p> Nao Abrimos Hoje </p>
+
+
+            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+
+        </div>
+    </div>
+
+    <section class="imagen-contacto">
         <h2>Tienes Alguna duda al Respecto de nosotros?</h2>
         <p>Puedes entrar en com unicacion con nosotros para ayudarte en lo que necesitas en tus ejercicios como dietas</p>
-        <a href="contacto.php" class="boton-verde">Contactanos</a>
-    </seccion>
+        <a href="contacto.php" class="boton-verde">Mais de Nos</a>
+    </section>
 
     <div class="contenedor seccion seccion-inferior">
         <section class="blog">
@@ -215,21 +240,6 @@
         </section>
     </div>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="Nosotros.php">Nosotros</a>
-                <a href="Productos.php">Productos</a>
-                <a href="Imagenes.php">Imagenes</a>
-                <a href="Exercicios.php">Exercicios</a>
-                <a href="Contactanos.php">Contactanos</a>
-            </nav>
-        </div>
-
-        <p class="copyright">Todos los Derechos Reservados 2021@copyright</p>
-    </footer>
-    
-    <script src="build/js/bundle.min.js"></script>
-
-</body>
-</html>
+<?php
+    incluirTemplate('footer');
+?>
