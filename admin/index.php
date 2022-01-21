@@ -12,6 +12,9 @@
         <a href="/admin/productos/crear.php" class="boton boton-verde">Novo Producto</a>
 
         <a href="/admin/maquinas/crear.php" class="boton boton-verde">Novo Maquina</a>
+
+        <a href="/admin/diasHorario/crear.php" class="boton boton-verde">Mudar Horario</a>
+        
     </main>
 
 
