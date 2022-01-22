@@ -1,7 +1,11 @@
 <?php
     //base de datos
     require '../../includes/config/database.php';
-    conectarDb();
+    $db = conectarDb();
+
+    // consultar para obtener las categorias productos
+    $consulta = "SELECT * FROM category";
+    $resultado = mysqli_query($db, $consulta);
 
     // Arreglo con mensaje de errorres
     $errores = [];
@@ -9,7 +13,8 @@
     $titulo = '';
     $precio = '';
     $descripcion = '';
-    $categoryId = '';
+    $categoriaId = '';
+    $creado = date('Y/m/d');
 
     // ejecurtar el codigo despues de que el usuario envia el formulario
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -20,7 +25,7 @@
         $titulo = $_POST['titulo'];
         $precio = $_POST['precio'];
         $descripcion = $_POST['descripcion'];
-        $categoryId = $_POST['categoria'];
+        $categoriaId = $_POST['categoria'];
 
         if(!$titulo){
             $errores[] = "Titulo do Producto Obligatorio";
@@ -31,7 +36,7 @@
         if(!$descripcion){
             $errores[] = "Descripcao do Producto Obligatorio";
         }
-        if(!$categoryId){
+        if(!$categoriaId){
             $errores[] = "Categoria do Producto Obligatorio";
         }
 
@@ -42,12 +47,13 @@
         //revisar quel el array de errores este vacio
         if(empty($errores)){
             //insertare en la base de datos
-            $query = " INSERT INTO Productos (titulo, precio, descripcion, categoryId ) VALUES ( '$titulo', '$precio', '$descripcion', '$categoryId' ) ";
+            $query = " INSERT INTO productos (titulo, precio, descripcion, creado, categoriaId ) VALUES ( '$titulo', '$precio', '$descripcion', '$creado', '$categoriaId' ) ";
 
             $resultado = mysqli_query($db, $query);
 
             if($resultado){
-                echo "insertando corractamente";
+                // redireccionar al usuario despues de crear producto
+                header('Location: /admin');
             }            
         }
 
@@ -97,8 +103,11 @@
 
                 <select name="categoria">
                     <option value="">--Escolher--</option>
-                    <option value="1"></option>
-                    <option value="2"></option>
+                    <?php while($row = mysqli_fetch_assoc($resultado) ) : ?>
+
+                        <option <?php echo $categoriaId === $row['id'] ? 'selected' : ''; ?> value="<?php echo $row['id']; ?>"> <?php echo $row['categoria']; ?></option>
+
+                    <?php endwhile; ?>
                 </select>
             </fieldset>
 

@@ -1,13 +1,17 @@
 <?php
     //base de datos
     require '../../includes/config/database.php';
-    conectarDb();
+    $db = conectarDb();
+
+    // consultar para obtener las categorias productos
+    $consulta = "SELECT * FROM dias_horario";
+    $resultado = mysqli_query($db, $consulta);
 
     // Arreglo con mensaje de errorres
     $errores = [];
 
     $dia_semana = '';
-    $describcion_Dia = '';
+    $descripcion_dia = '';
 
     // ejecurtar el codigo despues de que el usuario envia el formulario
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -16,12 +20,12 @@
         // echo "</pre>";
 
         $dia_semana = $_POST['dia_semana'];
-        $describcion_Dia = $_POST['describcion_Dia'];
+        $descripcion_dia = $_POST['descripcion_dia'];
 
         if(!$dia_semana){
             $errores[] = "Dia da Semana Obligatorio";
         }
-        if(!$describcion_Dia){
+        if(!$descripcion_dia){
             $errores[] = "Informacao do Dia Obligatorio";
         }
 
@@ -29,13 +33,14 @@
         //revisar quel el array de errores este vacio
         if(empty($errores)){
             //insertare en la base de datos
-            $query = " INSERT INTO DiasHorario (dia_semana, describcion_Dia ) VALUES ( '$dia_semana', '$describcion_Dia' ) ";
+            $query = " INSERT INTO dias_horario (dia_semana, descripcion_dia ) VALUES ( '$dia_semana', '$descripcion_dia' ) ";
 
             $resultado = mysqli_query($db, $query);
 
             if($resultado){
-                echo "insertando corractamente";
-            }
+                // redireccionar al usuario despues de crear producto
+                header('Location: /admin');
+            } 
         }
     }
 
@@ -70,7 +75,7 @@
 
 
                 <label for="descripcion">Descrição:</label>
-                <textarea type="text" name="describcion_Dia" id="descripcion" ><?php echo $describcion_Dia; ?></textarea>
+                <textarea type="text" name="descripcion_dia" id="descripcion" ><?php echo $descripcion_dia; ?></textarea>
             </fieldset>
 
             <input type="submit" value="Crear Producto" class="boton boton-verde">
