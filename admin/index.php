@@ -7,7 +7,7 @@
 
 
     <main class="contenedor seccion">
-        <h1>--Administrador de Productos--</h1>
+        <h1>--Gestor--</h1>
 
         <a href="/admin/productos/crear.php" class="boton boton-verde">Novo Producto</a>
 

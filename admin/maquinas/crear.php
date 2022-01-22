@@ -20,8 +20,8 @@
         // var_dump($_POST);
         // echo "</pre>";
 
-        $titulo = $_POST['titulo'];
-        $ejercicioId = $_POST['categoria'];
+        $titulo = mysqli_real_escape_string( $db, $_POST['titulo'] );
+        $ejercicioId = mysqli_real_escape_string( $db, $_POST['categoria'] );
 
         if(!$titulo){
             $errores[] = "Nome da Maquiina é Obligatorio";
@@ -66,7 +66,7 @@
 
         <?php endforeach; ?>
 
-        <form class="formulario" method="POST" action="/admin/maquinas/crear.php">
+        <form class="formulario" method="POST" action="/admin/maquinas/crear.php" enctype="multipart/forn-data">
             <fieldset>
                 <legend>Informacao da Maquina</legend>
 
@@ -74,7 +74,7 @@
                 <input type="text" id="titulo" name="titulo" placeholder="Titulo Producto" value="<?php echo $titulo; ?>">
 
                 <label for="imagen">Imagen:</label>
-                <input type="file" id="imagen" accept="image/jpeg, image/png, image/webp">
+                <input type="file" id="imagen" accept="image/jpeg, image/png, image/webp" name="imagen">
 
             </fieldset>
 

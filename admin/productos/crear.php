@@ -14,18 +14,31 @@
     $precio = '';
     $descripcion = '';
     $categoriaId = '';
-    $creado = date('Y/m/d');
 
     // ejecurtar el codigo despues de que el usuario envia el formulario
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        /* 
+            //sanitizar
+            $titulo = filter_var($titulo, FILTER_SANITIZE_NUMBER_FLOAT);
+            
+            //validar
+            $resultado = filter_var($titulo, FILTER_VALIDATE_INT);
+        */
         // echo "<pre>";
         // var_dump($_POST);
         // echo "</pre>";
 
-        $titulo = $_POST['titulo'];
-        $precio = $_POST['precio'];
-        $descripcion = $_POST['descripcion'];
-        $categoriaId = $_POST['categoria'];
+        $titulo = mysqli_real_escape_string( $db, $_POST['titulo'] );
+        $precio = mysqli_real_escape_string( $db, $_POST['precio'] );
+        $descripcion = mysqli_real_escape_string( $db, $_POST['descripcion'] );
+        $categoriaId = mysqli_real_escape_string( $db, $_POST['categoria'] );
+        $creado = date('Y/m/d');
+
+        // asignar files hacia una variable
+        $imagen = $_FILES['imagen'];
+        
+
+        exit;
 
         if(!$titulo){
             $errores[] = "Titulo do Producto Obligatorio";
@@ -39,6 +52,16 @@
         if(!$categoriaId){
             $errores[] = "Categoria do Producto Obligatorio";
         }
+        if(!$imagen['name'] || $imagen['error']){
+            $errores = 'La Imagen es Obligatoria';
+        }
+
+        /* //validar por tamaño (100 kb de tamaño imagen)
+        $medida = 1000 * 100;
+
+        if($imagen['size'] > $medida){
+            $errores[] = 'La imagen es muy pesada';
+        } */
 
         // echo "<pre>";
         // var_dump($errores);
@@ -79,7 +102,7 @@
 
         <?php endforeach; ?>
 
-        <form class="formulario" method="POST" action="/admin/productos/crear.php">
+        <form class="formulario" method="POST" action="/admin/productos/crear.php" enctype="multipart/forn-data">
 
             <fieldset>
                 <legend>Informacao do Producto</legend>
@@ -91,7 +114,7 @@
                 <input type="number" id="precio" name="precio" placeholder="Preço Producto" value="<?php echo $precio; ?>">
 
                 <label for="imagen">Imagen:</label>
-                <input type="file" id="imagen" accept="image/jpeg, image/png, image/webp">
+                <input type="file" id="imagen" accept="image/jpeg, image/png, image/webp" name="imagen">
 
                 <label for="descripcion">Descrição:</label>
                 <textarea type="text" id="descripcion" name="descripcion" ><?php echo $descripcion; ?></textarea>

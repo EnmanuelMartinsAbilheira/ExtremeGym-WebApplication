@@ -19,8 +19,8 @@
         // var_dump($_POST);
         // echo "</pre>";
 
-        $dia_semana = $_POST['dia_semana'];
-        $descripcion_dia = $_POST['descripcion_dia'];
+        $dia_semana = mysqli_real_escape_string( $db, $_POST['dia_semana'] );
+        $descripcion_dia = mysqli_real_escape_string( $db, $_POST['descripcion_dia'] );
 
         if(!$dia_semana){
             $errores[] = "Dia da Semana Obligatorio";
