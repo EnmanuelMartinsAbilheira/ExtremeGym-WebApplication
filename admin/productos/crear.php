@@ -24,8 +24,13 @@
             //validar
             $resultado = filter_var($titulo, FILTER_VALIDATE_INT);
         */
+
         // echo "<pre>";
         // var_dump($_POST);
+        // echo "</pre>";
+        
+        // echo "<pre>";
+        // var_dump($_FILES);
         // echo "</pre>";
 
         $titulo = mysqli_real_escape_string( $db, $_POST['titulo'] );
@@ -37,8 +42,6 @@
         // asignar files hacia una variable
         $imagen = $_FILES['imagen'];
         
-
-        exit;
 
         if(!$titulo){
             $errores[] = "Titulo do Producto Obligatorio";
@@ -53,15 +56,15 @@
             $errores[] = "Categoria do Producto Obligatorio";
         }
         if(!$imagen['name'] || $imagen['error']){
-            $errores = 'La Imagen es Obligatoria';
+            $errores[] = 'La Imagen es Obligatoria';
         }
 
-        /* //validar por tamaño (100 kb de tamaño imagen)
-        $medida = 1000 * 100;
+        //validar por tamaño (3mb de tamaño imagen)
+        $medida = 1000 * 3000;
 
         if($imagen['size'] > $medida){
             $errores[] = 'La imagen es muy pesada';
-        } */
+        } 
 
         // echo "<pre>";
         // var_dump($errores);
@@ -69,6 +72,18 @@
 
         //revisar quel el array de errores este vacio
         if(empty($errores)){
+
+            /** Subida de Archivos **/
+
+            //crear una carpeta
+            $carpetaImagenes = '../../imagenes';
+
+            if(!is_dir($carpetaImagenes)) {
+                mkdir($carpetaImagenes);
+            }
+
+            exit;
+
             //insertare en la base de datos
             $query = " INSERT INTO productos (titulo, precio, descripcion, creado, categoriaId ) VALUES ( '$titulo', '$precio', '$descripcion', '$creado', '$categoriaId' ) ";
 
@@ -102,7 +117,7 @@
 
         <?php endforeach; ?>
 
-        <form class="formulario" method="POST" action="/admin/productos/crear.php" enctype="multipart/forn-data">
+        <form class="formulario" method="POST" action="/admin/productos/crear.php" enctype="multipart/form-data">
 
             <fieldset>
                 <legend>Informacao do Producto</legend>

@@ -23,16 +23,40 @@
         $titulo = mysqli_real_escape_string( $db, $_POST['titulo'] );
         $ejercicioId = mysqli_real_escape_string( $db, $_POST['categoria'] );
 
+        // asignar files hacia una variable
+        $imagen = $_FILES['imagen'];
+        
         if(!$titulo){
             $errores[] = "Nome da Maquiina é Obligatorio";
         }
         if(!$ejercicioId){
             $errores[] = "Todas as Maquinas tem a sua Categoria";
         }
+        if(!$imagen['name'] || $imagen['error']){
+            $errores[] = 'La Imagen es Obligatoria';
+        }
 
+        //validar por tamaño (3mb de tamaño imagen)
+        $medida = 1000 * 3000;
+
+        if($imagen['size'] > $medida){
+            $errores[] = 'La imagen es muy pesada';
+        } 
 
         //revisar quel el array de errores este vacio
         if(empty($errores)){
+
+            /** Subida de Archivos **/
+
+            //crear una carpeta
+            $carpetaImagenes = '../../imagenes';
+
+            if(!is_dir($carpetaImagenes)) {
+                mkdir($carpetaImagenes);
+            }
+
+            exit;
+
             //insertare en la base de datos
             $query = " INSERT INTO maquinas (titulo, ejercicioId ) VALUES ( '$titulo', '$ejercicioId' ) ";
 
@@ -66,7 +90,7 @@
 
         <?php endforeach; ?>
 
-        <form class="formulario" method="POST" action="/admin/maquinas/crear.php" enctype="multipart/forn-data">
+        <form class="formulario" method="POST" action="/admin/maquinas/crear.php" enctype="multipart/form-data">
             <fieldset>
                 <legend>Informacao da Maquina</legend>
 
