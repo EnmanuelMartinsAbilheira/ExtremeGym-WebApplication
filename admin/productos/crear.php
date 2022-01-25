@@ -76,22 +76,27 @@
             /** Subida de Archivos **/
 
             //crear una carpeta
-            $carpetaImagenes = '../../imagenes';
+            $carpetaImagenes = '../../imagenes/';
 
             if(!is_dir($carpetaImagenes)) {
                 mkdir($carpetaImagenes);
             }
 
-            exit;
+            //generar nombre unico
+            $nombreImagen = md5( uniqid( rand(), true ) ) . ".jpg";
+
+            //subir la imagen
+            move_uploaded_file($imagen['tmp_name'], $carpetaImagenes . $nombreImagen);
+
 
             //insertare en la base de datos
-            $query = " INSERT INTO productos (titulo, precio, descripcion, creado, categoriaId ) VALUES ( '$titulo', '$precio', '$descripcion', '$creado', '$categoriaId' ) ";
+            $query = " INSERT INTO productos (titulo, precio, imagen, descripcion, creado, categoriaId ) VALUES ( '$titulo', '$precio', '$nombreImagen', '$descripcion', '$creado', '$categoriaId' ) ";
 
             $resultado = mysqli_query($db, $query);
 
             if($resultado){
                 // redireccionar al usuario despues de crear producto
-                header('Location: /admin');
+                header('Location: /admin?resultado=1');
             }            
         }
 

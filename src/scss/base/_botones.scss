@@ -13,3 +13,8 @@
     @include boton($verde, block);
     margin: 2rem;
 }
+
+.boton-rojo-block{
+    @include boton($rojo, block);
+    margin: 2rem;
+}
