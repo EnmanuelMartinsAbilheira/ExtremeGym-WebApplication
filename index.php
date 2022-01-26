@@ -8,31 +8,36 @@
         <h1>As 4 Principais Coisas de um Treino</h1>
 
         <div class="iconos-nosotros">
-            <div class="icono">
+            
+            <div class="icono"> <!-- icono Alimentacion -->
                 <img src="/build/img/149655-ffeb3b.svg" alt="Icono Alimentacion" loading="lazy">
                 <h3>Alimentacion</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui at ullam ducimus nobis esse deleniti, facere possimus quas aut optio sapiente iste asperiores debitis eum? At odit eligendi eveniet.</p>
             </div>
-            <div class="icono">
+
+            <div class="icono"><!-- icono treino -->
                 <img src="/build/img/icono3.svg" alt="Icono Tiempo" loading="lazy">
                 <h3>Treino</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui at ullam ducimus nobis esse deleniti, facere possimus quas aut optio sapiente iste asperiores debitis eum? At odit eligendi eveniet.</p>
             </div>
-            <div class="icono">
+
+            <div class="icono"><!-- icono dedicacion -->
                 <img src="/build/img/47188-ffeb3b.svg" alt="Icono Fuerza" loading="lazy">
                 <h3>Dedicacion</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui at ullam ducimus nobis esse deleniti, facere possimus quas aut optio sapiente iste asperiores debitis eum? At odit eligendi eveniet.</p>
             </div>
-            <div class="icono">
+
+            <div class="icono"><!-- icono descanso -->
                 <img src="/build/img/547490-ffeb3b.svg" alt="Icono Descanso" loading="lazy">
                 <h3>Descanso</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui at ullam ducimus nobis esse deleniti, facere possimus quas aut optio sapiente iste asperiores debitis eum? At odit eligendi eveniet.</p>
             </div>
+
         </div>
     </main>
 
     <section class="seccion contenedor">
-        <h2 class="titulo-producto">Los Mejores Productos Vendidos Son</h2>
+        <h2 class="titulo-producto">Os Productos Mais Vendidos Sao</h2>
 
         <div class="contenedor-anuncios">
 
@@ -108,10 +113,11 @@
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
+
         </div> <!-- .conteniedor-anuncios -->
 
         <div class="alinear-derecha">
-            <a href="anuncios.php" class="boton-verde">Ver Todos Los Productos</a>
+            <a href="anuncios.php" class="boton-verde">Ver Todos Os Productos</a>
         </div>
     </section>
 
@@ -176,14 +182,14 @@
     </div>
 
     <section class="imagen-contacto">
-        <h2>Tienes Alguna duda al Respecto de nosotros?</h2>
+        <h2>Tem Alguma duvida? podemos ajudar-te?</h2>
         <p>Puedes entrar en com unicacion con nosotros para ayudarte en lo que necesitas en tus ejercicios como dietas</p>
-        <a href="contacto.php" class="boton-verde">Mais de Nos</a>
+        <a href="contacto.php" class="boton-verde">Contactenos</a>
     </section>
 
     <div class="contenedor seccion seccion-inferior">
         <section class="blog">
-            <h3>Nuestro Equipamento</h3>
+            <h3>Nossos Equipamentos</h3>
 
             <article class="entrada-blog">
                 <div class="imagen">

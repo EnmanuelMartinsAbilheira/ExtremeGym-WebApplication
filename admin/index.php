@@ -1,5 +1,6 @@
 <?php
 
+
     //importar la conexion
     require '../includes/config/database.php';
     $db = conectarDb();
@@ -10,8 +11,8 @@
     $query2 = "SELECT * FROM maquinas";
     //escribir el query dias_horario
     $query3 = "SELECT * FROM dias_horario";
-    //escribir el query category
-    $query4 = "SELECT * FROM category";
+    // //escribir el query category
+    // $query4 = "SELECT * FROM category";
 
     //consultar la BD productos
     $resultadoConsulta = mysqli_query($db, $query);
@@ -19,17 +20,85 @@
     $resultadoConsulta2 = mysqli_query($db, $query2);
     //consultar la BD dias_horario
     $resultadoConsulta3 = mysqli_query($db, $query3);
-    //consultar la BD category
-    $resultadoConsulta4 = mysqli_query($db, $query4);
+    // //consultar la BD category
+    // $resultadoConsulta4 = mysqli_query($db, $query4);
 
     //muestra mensaje condicional
     $resultado = $_GET['resultado'] ?? null;
+
+
+    //Eliminar productos
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $id = $_POST['id1'];
+        $id = filter_var($id, FILTER_VALIDATE_INT);
+
+        if($id){
+
+            //Elimina el archivoi
+            $query = "SELECT imagen FROM productos WHERE id = ${id}";
+
+            $resultado = mysqli_query($db, $query);
+            $producto = mysqli_fetch_assoc($resultado);
+
+            unlink('../imagenes/' . $producto['imagen']);
+            //eliminar lo seleccionado
+            $query = "DELETE FROM productos WHERE id = ${id}";
+            $resultado = mysqli_query($db, $query);
+
+            if($resultado){
+                header('Location: /admin?resultado=5');
+            }
+        }
+    }
+
+    //Eliminar maquinas
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $id = $_POST['id2'];
+        $id = filter_var($id, FILTER_VALIDATE_INT);
+
+        if($id){
+
+            //Elimina el archivoi
+            $query = "SELECT imagen FROM maquinas WHERE id = ${id}";
+
+            $resultado = mysqli_query($db, $query);
+            $maquina = mysqli_fetch_assoc($resultado);
+
+            unlink('../imagenes/' . $maquina['imagen']);
+            //eliminar lo seleccionado
+            $query = "DELETE FROM maquinas WHERE id = ${id}";
+            $resultado = mysqli_query($db, $query);
+
+            if($resultado){
+                header('Location: /admin?resultado=6');
+            }
+        }
+    }
+
+    //Eliminar Dias_horario
+    if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        $id = $_POST['id3'];
+        $id = filter_var($id, FILTER_VALIDATE_INT);
+
+        if($id){
+
+            //eliminar lo seleccionado
+            $query = "DELETE FROM dias_horario WHERE id = ${id}";
+            $resultado = mysqli_query($db, $query);
+
+            if($resultado){
+                header('Location: /admin?resultado=7');
+            }
+        }
+    }
+    
+   
 
     //incluir templates header
     $navEffect = true;
     $inicio =false;
     require '../includes/funciones.php';
-    include '../includes/templates/header.php' 
+    include '../includes/templates/header.php';
 ?>
 
 
@@ -38,10 +107,19 @@
 
         <?php if($resultado == 1): ?>
             <p class="alerta exito">Producto Registrado com Sucesso</p>
-        <?php endif; ?>
-
-        <?php if($resultado == 2): ?>
+        <?php elseif($resultado == 2): ?>
             <p class="alerta exito">Maquina Registrada com Sucesso</p>
+        <?php elseif($resultado == 3): ?>
+            <p class="alerta exito">Producto Actualizado com Sucesso</p>
+        <?php elseif($resultado == 4): ?>
+            <p class="alerta exito">Maquina Actualizado com Sucesso</p>
+        <?php elseif($resultado == 5): ?>
+            <p class="alerta exito">Producto Eliminado com Sucesso</p>
+        <?php elseif($resultado == 6): ?>
+            <p class="alerta exito">Maquina Eliminado com Sucesso</p>
+        <?php elseif($resultado == 7): ?>
+            <p class="alerta exito">Dia e Horario Eliminado com Sucesso</p>
+        
         <?php endif; ?>
 
         <a href="/admin/productos/crear.php" class="boton boton-verde">Novo Producto</a>
@@ -71,8 +149,13 @@
                     <td> <img src="/imagenes/<?php echo $producto['imagen']; ?>" class="imagen-tabla"> </td>
                     <td>€ <?php echo $producto['precio']; ?> </td>
                     <td>
-                        <a href="#" class="boton-rojo-block">Eliminar</a>
-                        <a href="#" class="boton-amarillo-block">Actualizar</a>
+                        <form method="POST" class="w-100" action="">
+                        
+                            <input type="hidden" name="id1" value="<?php echo $producto['id']; ?>">
+
+                            <input type="submit" class="boton-rojo-block" value="Eliminar">
+                        </form>
+                        <a href="/admin/productos/actualizar.php?id=<?php echo $producto['id']; ?>" class="boton-amarillo-block">Actualizar</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>
@@ -99,8 +182,13 @@
                     <td><?php echo $maquina['titulo']; ?> </td>
                     <td> <img src="/imagenes/<?php echo $maquina['imagen']; ?>" class="imagen-tabla"> </td>
                     <td>
-                        <a href="#" class="boton-rojo-block">Eliminar</a>
-                        <a href="#" class="boton-amarillo-block">Actualizar</a>
+                        <form method="POST" class="w-100" action="">
+                        
+                            <input type="hidden" name="id2" value="<?php echo $maquina['id']; ?>">
+
+                            <input type="submit" class="boton-rojo-block" value="Eliminar">
+                        </form>
+                        <a href="/admin/maquinas/actualizar.php?id=<?php echo $maquina['id']; ?>" class="boton-amarillo-block">Actualizar</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>
@@ -127,40 +215,22 @@
                     <td><?php echo $dias_horario['dia_semana']; ?> </td>
                     <td><?php echo $dias_horario['descripcion_dia']; ?> </td>
                     <td>
-                        <a href="#" class="boton-rojo-block">Eliminar</a>
-                        <a href="#" class="boton-amarillo-block">Actualizar</a>
+                        <form method="POST" class="w-100" action="">
+                        
+                            <input type="hidden" name="id3" value="<?php echo $maquina['id']; ?>">
+
+                            <input type="submit" class="boton-rojo-block" value="Eliminar">
+                        </form>
+                        <a href="/admin/diasHorario/actualizar.php?id=<?php echo $dias_horario['id']; ?>" class="boton-amarillo-block">Actualizar</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
         </table>
-
 
 
         <!-- Gestor das Categorias Productos -->
-        <h2>-- Gestor das Categorias --</h2>
-        <table class="propiedades">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>categoria</th>
-                    <th>Açao</th>
-                </tr>
-            </thead>
 
-            <tbody> <!-- Mostrar los resultados -->
-                <?php while($category = mysqli_fetch_assoc($resultadoConsulta4)): ?>
-                <tr>
-                    <td><?php echo $category['id']; ?> </td>
-                    <td><?php echo $category['categoria']; ?> </td>
-                    <td>
-                        <a href="#" class="boton-rojo-block">Eliminar</a>
-                        <a href="#" class="boton-amarillo-block">Actualizar</a>
-                    </td>
-                </tr>
-                <?php endwhile; ?>
-            </tbody>
-        </table>
 
     </main>
 

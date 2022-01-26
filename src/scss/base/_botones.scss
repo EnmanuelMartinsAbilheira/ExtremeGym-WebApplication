@@ -4,6 +4,7 @@
 .boton-amarillo-block{
     @include boton($amarillo, block);
     margin: 2rem;
+    width: 90%;
 }
 
 .boton-verde{
@@ -17,4 +18,5 @@
 .boton-rojo-block{
     @include boton($rojo, block);
     margin: 2rem;
+    width: 90%;
 }

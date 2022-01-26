@@ -78,7 +78,7 @@
     $navEffect = true;
     $inicio =false;
     require '../../includes/funciones.php';
-    include '../../includes/templates/header.php' 
+    include '../../includes/templates/header.php';
 ?>
 
 
