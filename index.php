@@ -54,9 +54,7 @@
                     <p>Sabor banana para un mejor post entrenamiento</p>
                     <p class="precio">$19,98</p>
 
-                
-
-                    <a href="anuncio.php" class="boton-verde-block">Ver Producto</a>
+                    <a href="productos.php" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
@@ -89,7 +87,7 @@
                         </li>
                     </ul> -->
 
-                    <a href="anuncio.php" class="boton-verde-block">Ver Producto</a>
+                    <a href="productos.php" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
@@ -109,7 +107,7 @@
 
                 
 
-                    <a href="anuncio.php" class="boton-verde-block">Ver Producto</a>
+                    <a href="productos.php" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
@@ -117,7 +115,7 @@
         </div> <!-- .conteniedor-anuncios -->
 
         <div class="alinear-derecha">
-            <a href="anuncios.php" class="boton-verde">Ver Todos Os Productos</a>
+            <a href="productos.php" class="boton-verde">Ver Todos Os Productos</a>
         </div>
     </section>
 

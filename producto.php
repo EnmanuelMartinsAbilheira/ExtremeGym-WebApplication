@@ -1,4 +1,29 @@
 <?php
+
+    $id = $_GET['id'];
+    $id = filter_var($id, FILTER_VALIDATE_INT);
+
+    if(!$id){
+        header('Location: /');
+    }
+
+    //importar la conexion
+    require __DIR__ . '/includes/config/database.php';
+    $db = conectarDb();
+
+    //consultar
+    $consulta = "SELECT * FROM productos WHERE id = ${id}";
+
+    //obtener resultado
+    $resultado = mysqli_query($db, $consulta);
+
+    if($resultado->num_rows === 0){
+        header('Location: /');
+    }
+
+    $producto = mysqli_fetch_assoc($resultado);
+
+
     $navEffect = true;
     $inicio =false;
     require 'includes/funciones.php';
@@ -7,36 +32,20 @@
 
 
     <main class="contenedor seccion contenido-centrado">
-        <h1>All Black Everitinhg</h1>
+        <h1><?php echo $producto['titulo']; ?></h1>
 
-        <picture>
-            <source srcset="build/img/ABE.webp" type="image/webp">
-            <source srcset="build/img/ABE.jpeg" type="image/jpeg">
-            <img loading="lazy" src="build/img/ABE.jpeg" alt="imagen pre treino">
-        </picture>
+        <img loading="lazy" src="/imagenes/<?php echo $producto['imagen']; ?>" alt="imagen pre treino">
+
         <div class="resumen-propiedad">
-            <p class="precio">$25,99</p>
+            <p class="precio">€<?php echo $producto['precio']; ?></p>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, eum maxime laboriosam fugiat expedita nulla, ullam culpa autem voluptatibus itaque provident enim? Ullam aut dolores atque ut? Architecto, repellat nesciunt!</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, eum maxime laboriosam fugiat expedita nulla, ullam culpa autem voluptatibus itaque provident enim? Ullam aut dolores atque ut? Architecto, repellat nesciunt!</p>
+            <p><?php echo $producto['descripcion']; ?></p>
         </div>
     </main>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion navEffect">
-                <a class="navEffect-a" href="nosotros.php"><span>Nosotros</span></a>
-                <a class="navEffect-a" href="productos.php"><span>Productos</span></a>
-                <a class="navEffect-a" href="imagenes.php"><span>Imagenes</span></a>
-                <a class="navEffect-a" href="exercicios.php"><span>Exercicios</span></a>
-                <a class="navEffect-a" href="contacto.php"><span>Contacto</span></a>
-            </nav>
-        </div>
 
-        <p class="copyright">Todos los Derechos Reservados 2021@copyright</p>
-    </footer>
-    
-    <script src="build/js/bundle.min.js"></script>
+<?php 
+    mysqli_close($db);
 
-</body>
-</html>
+    incluirTemplate('footer');
+?>
