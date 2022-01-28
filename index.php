@@ -130,64 +130,19 @@
     </section>
 
 
+    <!-- SQL dias de la semana -->
     <h2 class="titulo-producto">Nosso Horario</h2>
     <div class="iconos-7dias">
-        <div class="icono_dias">
-            <h3>segunda</h3>
-            <p>Abrimos: 8:00 AM <br> Boxeo: 18:45 <br> Fechamos 22:00PM  </p>
+        <?php while($DiasHorario = mysqli_fetch_assoc($resultado)): ?>   
+            <div class="icono_dias">
+                <h3><?php echo $DiasHorario['dia_semana']; ?></h3>
+                
+                <p><?php echo $DiasHorario['descripcion_dia']; ?></p>
 
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-        <div class="icono_dias">
-            <h3>terca</h3>
-            <p>Abrimos: 8:00 AM <br>  <br> Fechamos 22:00PM  </p>
-
-
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-        <div class="icono_dias">
-            <h3>quarta</h3>
-            <p>Abrimos: 8:00 AM <br> HIIT: 18:45 <br> Fechamos 22:00PM  </p>
-
-
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-        <div class="icono_dias">
-            <h3>quinta</h3>
-            <p>Abrimos: 8:00 AM <br>  <br> Fechamos 22:00PM  </p>
-
-
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-        <div class="icono_dias">
-            <h3>sexta</h3>
-            <p>Abrimos: 8:00 AM <br> BodyJump <br> Fechamos 22:00PM  </p>
-
-
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-        <div class="icono_dias">
-            <h3>sabado</h3>
-            <p>Abrimos: 8:00 AM <br> <br> Fechamos 22:00PM  </p>
-
-
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-        <div class="icono_dias">
-            <h3>domingo</h3>
-            <p> Nao Abrimos Hoje </p>
-
-
-            <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
-
-        </div>
-    </div>
+                <a href="nosotros.php" class="boton-verde-block">Disponibilidade</a>
+            </div>
+        <?php endwhile; ?>
+    </div><!-- .iconos-7dias -->
 
     <section class="imagen-contacto">
         <h2>Tem Alguma duvida? podemos ajudar-te?</h2>

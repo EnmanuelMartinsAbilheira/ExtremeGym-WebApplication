@@ -16,10 +16,10 @@
     border-radius: $separacion;
     background-color: hsla(0, 0%, 43%, 0.12);
     p{
-        align-items: center;
-        display: flex;
-        justify-content: center;
+        text-align: right ;
         border-radius: $separacion;
+        max-width: 20rem;
+        margin: 0rem 0rem 0rem 4rem;
     }
 
     
