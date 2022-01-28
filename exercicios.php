@@ -1,4 +1,40 @@
 <?php
+
+    //importar la conexion
+    require 'includes/config/database.php';
+    $db = conectarDB();
+
+    //consultar
+    $consulta1 = "SELECT * FROM maquinas WHERE ejercicioId = 1";
+    $consulta2 = "SELECT * FROM maquinas WHERE ejercicioId = 2";
+    $consulta3 = "SELECT * FROM maquinas WHERE ejercicioId = 3";
+    $consulta4 = "SELECT * FROM maquinas WHERE ejercicioId = 4";
+    $consulta5 = "SELECT * FROM maquinas WHERE ejercicioId = 5";
+    $consulta6 = "SELECT * FROM maquinas WHERE ejercicioId = 6";
+    $consulta7 = "SELECT * FROM maquinas WHERE ejercicioId = 7";
+    $consulta8 = "SELECT * FROM maquinas WHERE ejercicioId = 8";
+    $consulta9 = "SELECT * FROM maquinas WHERE ejercicioId = 9";
+    $consulta10 = "SELECT * FROM maquinas WHERE ejercicioId = 10";
+    $consulta11 = "SELECT * FROM maquinas WHERE ejercicioId = 11";
+    $consulta12 = "SELECT * FROM maquinas WHERE ejercicioId = 12";
+    $consulta13 = "SELECT * FROM maquinas WHERE ejercicioId = 13";
+
+    //obtener resultado
+    $resultado1 = mysqli_query($db, $consulta1);
+    $resultado2 = mysqli_query($db, $consulta2);
+    $resultado3 = mysqli_query($db, $consulta3);
+    $resultado4 = mysqli_query($db, $consulta4);
+    $resultado5 = mysqli_query($db, $consulta5);
+    $resultado6 = mysqli_query($db, $consulta6);
+    $resultado7 = mysqli_query($db, $consulta7);
+    $resultado8 = mysqli_query($db, $consulta8);
+    $resultado9 = mysqli_query($db, $consulta9);
+    $resultado10 = mysqli_query($db, $consulta10);
+    $resultado11 = mysqli_query($db, $consulta11);
+    $resultado12 = mysqli_query($db, $consulta12);
+    $resultado13 = mysqli_query($db, $consulta13);
+
+
     $navEffect = true;
     $inicio =false;
     require 'includes/funciones.php';
@@ -173,342 +209,263 @@
 
 
     <main>
+
         <div class="contenedor seccion">
+
+
             <h2 class="titulo-producto">Cardio</h2>
-
             <div class="contenedor-exercicios">
+                <?php while($Cardio = mysqli_fetch_assoc($resultado1)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
 
-                <!--producto 100%-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/zumub.webp" type="image/webp">
-                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
-                    </picture>
-                
+                        <img loading="lazy" src="/imagenes/<?php echo $Cardio['imagen']; ?>" alt="anuncio">
 
-                    <div class="contenido-anuncio">
-                        <h3>100% WHEY</h3>
-                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Cardio['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
 
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-                <!--producto 100%-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/zumub.webp" type="image/webp">
-                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>100% WHEY</h3>
-                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-                <!--producto 100%-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/zumub.webp" type="image/webp">
-                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>100% WHEY</h3>
-                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-                <!--producto 100%-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/zumub.webp" type="image/webp">
-                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>100% WHEY</h3>
-                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-                <!--producto 100%-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/zumub.webp" type="image/webp">
-                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>100% WHEY</h3>
-                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
 
 
             <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Peito</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto c4-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/c4.webp" type="image/webp">
-                        <source srcset="build/img/c4.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/c4.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>C4 Cafeine</h3>
-                        <!--<p>Mais energia para todo el entrenamiento</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio --> 
-
-
-                <!--producto 100%-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/zumub.webp" type="image/webp">
-                        <source srcset="build/img/zumub.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/zumub.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>100% WHEY</h3>
-                        <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Dorsais</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Biceps</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Triceps</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Abdominal</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Lumbar</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Pernas</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
-            <h2 class="titulo-producto">Gemeos</h2>
-            <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
-
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
-
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
-
-
-            </div> <!-- .conteniedor-exercicios -->
-
-
-            <!-- separacao categoria -->
-
             <h2 class="titulo-producto">Aulas</h2>
             <div class="contenedor-exercicios">
-                
-                <!--producto ABE-->
-                <div class="anuncio">
-                    <picture>
-                        <source srcset="build/img/ABE.webp" type="image/webp">
-                        <source srcset="build/img/ABE.jpg" type="image/jpeg">
-                        <img loading="lazy" src="build/img/ABE.jpg" alt="anuncio">
-                    </picture>
-                
+                <?php while($Aulas = mysqli_fetch_assoc($resultado2)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
 
-                    <div class="contenido-anuncio">
-                        <h3>All Black Everiting</h3>
-                        <!--<p>ABE é um pre treino que ayuda a ter toda a energia vitamina e suplementos alimentarios que podas ter</p>-->
+                        <img loading="lazy" src="/imagenes/<?php echo $Aulas['imagen']; ?>" alt="anuncio">
 
-                    </div> <!-- .contenido-anuncio -->
-                </div> <!-- .anuncio -->
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Aulas['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
 
 
-            </div> <!-- .conteniedor-exercicios -->
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Peito</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Peito = mysqli_fetch_assoc($resultado3)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Peito['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Peito['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
 
 
-        </div>
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Dorsais</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Dorsais = mysqli_fetch_assoc($resultado4)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Dorsais['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Dorsais['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Hombros</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Hombros = mysqli_fetch_assoc($resultado5)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Hombros['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Hombros['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Trapecio</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Trapecio = mysqli_fetch_assoc($resultado6)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Trapecio['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Trapecio['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Biceps</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Biceps = mysqli_fetch_assoc($resultado7)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Biceps['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Biceps['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Triceps</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Triceps = mysqli_fetch_assoc($resultado8)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Triceps['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Triceps['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Abdominales</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Abdominales = mysqli_fetch_assoc($resultado9)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Abdominales['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Abdominales['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Lumbar</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Lumbar = mysqli_fetch_assoc($resultado10)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Lumbar['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Lumbar['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Gluteus</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Gluteus = mysqli_fetch_assoc($resultado11)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Gluteus['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Gluteus['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Pernas</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Pernas = mysqli_fetch_assoc($resultado12)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Pernas['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Pernas['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+
+            <!-- separacao categoria -->
+            <h2 class="titulo-producto">Gemeos</h2>
+            <div class="contenedor-exercicios">
+                <?php while($Gemeos = mysqli_fetch_assoc($resultado13)): ?>
+                    <!--producto 100%-->
+                    <div class="anuncio">
+
+                        <img loading="lazy" src="/imagenes/<?php echo $Gemeos['imagen']; ?>" alt="anuncio">
+
+                        <div class="contenido-anuncio">
+                            <h3><?php echo $Gemeos['titulo']; ?></h3>
+                            <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
+
+                        </div> <!-- .contenido-anuncio -->
+                    </div> <!-- .anuncio -->
+                <?php endwhile; ?>
+            </div> <!-- .contenedor exercicio -->
+
+        </div><!-- .contenedor seccion -->
 
     </main>
 
 
 <?php
+    //cerrar la conexion
+    mysqli_close($db);
+
     incluirTemplate('footer');
 ?>
