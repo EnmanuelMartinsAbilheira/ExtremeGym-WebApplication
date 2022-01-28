@@ -4,18 +4,17 @@
     $db = conectarDb();
 
     //consultar
-    $consulta = "SELECT * FROM productos WHERE categoriaId = 3";
+    $consulta1 = "SELECT * FROM productos WHERE categoriaId = 1";
 
     //obtener resultado
-    $resultado = mysqli_query($db, $consulta);
+    $resultado1 = mysqli_query($db, $consulta1);
 
 ?>
 
 <div class="contenedor-anuncios">
-
     <?php while($producto = mysqli_fetch_assoc($resultado)): ?>
         <div class="anuncio">
-        
+
             <img loading="lazy" src="/imagenes/<?php echo $producto['imagen']; ?>" alt="anuncio">
             
             <div class="contenido-anuncio">
@@ -28,7 +27,6 @@
             </div> <!-- .contenido-anuncio -->
         </div> <!-- .anuncio -->
     <?php endwhile; ?>
-
 </div>
 
 

@@ -1,4 +1,14 @@
 <?php
+    //Conectar a la base de datos
+    require 'includes/config/database.php';
+    $db = conectarDB();
+    
+    //consultar
+    $consulta = "SELECT * FROM dias_horario";
+
+    //obtener resultado
+    $resultado = mysqli_query($db, $consulta);
+
     $navEffect = false;
     require 'includes/funciones.php';
     incluirTemplate('header', $inicio = true);
@@ -54,7 +64,7 @@
                     <p>Sabor banana para un mejor post entrenamiento</p>
                     <p class="precio">$19,98</p>
 
-                    <a href="productos.php" class="boton-verde-block">Ver Producto</a>
+                    <a href="producto.php?id=14" class="boton-verde-block">Ver Producto</a>
 
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->

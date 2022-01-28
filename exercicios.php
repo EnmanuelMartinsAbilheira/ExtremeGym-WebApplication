@@ -5,34 +5,34 @@
     $db = conectarDB();
 
     //consultar
-    $consulta1 = "SELECT * FROM maquinas WHERE ejercicioId = 1";
-    $consulta2 = "SELECT * FROM maquinas WHERE ejercicioId = 2";
-    $consulta3 = "SELECT * FROM maquinas WHERE ejercicioId = 3";
-    $consulta4 = "SELECT * FROM maquinas WHERE ejercicioId = 4";
-    $consulta5 = "SELECT * FROM maquinas WHERE ejercicioId = 5";
-    $consulta6 = "SELECT * FROM maquinas WHERE ejercicioId = 6";
-    $consulta7 = "SELECT * FROM maquinas WHERE ejercicioId = 7";
-    $consulta8 = "SELECT * FROM maquinas WHERE ejercicioId = 8";
-    $consulta9 = "SELECT * FROM maquinas WHERE ejercicioId = 9";
-    $consulta10 = "SELECT * FROM maquinas WHERE ejercicioId = 10";
-    $consulta11 = "SELECT * FROM maquinas WHERE ejercicioId = 11";
-    $consulta12 = "SELECT * FROM maquinas WHERE ejercicioId = 12";
-    $consulta13 = "SELECT * FROM maquinas WHERE ejercicioId = 13";
+    $consulta1 = "SELECT * FROM maquinas WHERE ejercicioId = 1";    //Cardio
+    $consulta2 = "SELECT * FROM maquinas WHERE ejercicioId = 2";    //Aulas
+    $consulta3 = "SELECT * FROM maquinas WHERE ejercicioId = 3";    //Peito
+    $consulta4 = "SELECT * FROM maquinas WHERE ejercicioId = 4";    //Dorsais
+    $consulta5 = "SELECT * FROM maquinas WHERE ejercicioId = 5";    //Hombros
+    $consulta6 = "SELECT * FROM maquinas WHERE ejercicioId = 6";    //Trapecio
+    $consulta7 = "SELECT * FROM maquinas WHERE ejercicioId = 7";    //Biceps
+    $consulta8 = "SELECT * FROM maquinas WHERE ejercicioId = 8";    //Triceps
+    $consulta9 = "SELECT * FROM maquinas WHERE ejercicioId = 9";    //Abdominais
+    $consulta10 = "SELECT * FROM maquinas WHERE ejercicioId = 10";  //Lumbar
+    $consulta11 = "SELECT * FROM maquinas WHERE ejercicioId = 11";  //Gluteus
+    $consulta12 = "SELECT * FROM maquinas WHERE ejercicioId = 12";  //Pernas
+    $consulta13 = "SELECT * FROM maquinas WHERE ejercicioId = 13";  //Gemeos
 
     //obtener resultado
-    $resultado1 = mysqli_query($db, $consulta1);
-    $resultado2 = mysqli_query($db, $consulta2);
-    $resultado3 = mysqli_query($db, $consulta3);
-    $resultado4 = mysqli_query($db, $consulta4);
-    $resultado5 = mysqli_query($db, $consulta5);
-    $resultado6 = mysqli_query($db, $consulta6);
-    $resultado7 = mysqli_query($db, $consulta7);
-    $resultado8 = mysqli_query($db, $consulta8);
-    $resultado9 = mysqli_query($db, $consulta9);
-    $resultado10 = mysqli_query($db, $consulta10);
-    $resultado11 = mysqli_query($db, $consulta11);
-    $resultado12 = mysqli_query($db, $consulta12);
-    $resultado13 = mysqli_query($db, $consulta13);
+    $resultado1 = mysqli_query($db, $consulta1);    //Cardio
+    $resultado2 = mysqli_query($db, $consulta2);    //Aulas
+    $resultado3 = mysqli_query($db, $consulta3);    //Peito
+    $resultado4 = mysqli_query($db, $consulta4);    //Dorsais
+    $resultado5 = mysqli_query($db, $consulta5);    //Hombros
+    $resultado6 = mysqli_query($db, $consulta6);    //Trapecio
+    $resultado7 = mysqli_query($db, $consulta7);    //Biceps
+    $resultado8 = mysqli_query($db, $consulta8);    //Triceps
+    $resultado9 = mysqli_query($db, $consulta9);    //Abdominais
+    $resultado10 = mysqli_query($db, $consulta10);  //Lumbar
+    $resultado11 = mysqli_query($db, $consulta11);  //Gluteus
+    $resultado12 = mysqli_query($db, $consulta12);  //Pernas
+    $resultado13 = mysqli_query($db, $consulta13);  //Gemeos
 
 
     $navEffect = true;
