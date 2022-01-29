@@ -1,3 +1,11 @@
+<?php 
+    if(!isset($_SESSION)){
+        session_start();
+
+    }
+    $auth = $_SESSION['login'] ?? false;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +38,9 @@
                         <a class="navEffect-a" href="imagenes.php"><span>Imagenes</span></a>
                         <a class="navEffect-a" href="exercicios.php"><span>Exercicios</span></a>
                         <a class="navEffect-a" href="contacto.php"><span>Contacto</span></a>
+                        <?php if($auth): ?>     
+                            <a href="cerrar-sesion.php">Fechar Sesion</a>                   
+                        <?php endif; ?>
                     </nav>
                 </div>
     

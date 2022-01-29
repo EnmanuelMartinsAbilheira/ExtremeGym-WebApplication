@@ -1,4 +1,14 @@
 <?php
+
+    /* con esto es para dar la permision si tiene login entra si no al index */
+    require '../../includes/funciones.php';
+    $auth = estaAutenticado();
+
+    if(!$auth){
+        header('Location: /');
+    }
+    /* con esto es para dar la permision si tiene login entra si no al index */
+
     //base de datos
     require '../../includes/config/database.php';
     $db = conectarDb();
@@ -47,7 +57,6 @@
 
     $navEffect = true;
     $inicio =false;
-    require '../../includes/funciones.php';
     include '../../includes/templates/header.php';
 ?>
 

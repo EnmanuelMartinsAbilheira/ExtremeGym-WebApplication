@@ -143,6 +143,7 @@
             </div>
         <?php endwhile; ?>
     </div><!-- .iconos-7dias -->
+    <!-- SQL dias de la semana -->
 
     <section class="imagen-contacto">
         <h2>Tem Alguma duvida? podemos ajudar-te?</h2>

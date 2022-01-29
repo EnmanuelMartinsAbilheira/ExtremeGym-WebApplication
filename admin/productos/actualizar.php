@@ -1,4 +1,13 @@
 <?php
+    /* con esto es para dar la permision si tiene login entra si no al index */
+    require '../../includes/funciones.php';
+    $auth = estaAutenticado();
+
+    if(!$auth){
+        header('Location: /');
+    }
+    /* con esto es para dar la permision si tiene login entra si no al index */
+
 
     //validar la URL sea un ID valido
     $id = $_GET['id'];
@@ -122,7 +131,6 @@
 
     $navEffect = true;
     $inicio =false;
-    require '../../includes/funciones.php';
     include '../../includes/templates/header.php';
 ?>
 
