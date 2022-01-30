@@ -1,6 +1,10 @@
 .dark-mode{
     background-color: darken($grisOscuro, 10); 
 
+    .navegacion-principal-productos{
+        color: $gris;
+    }
+
     p{
         color: $blanco;
     }

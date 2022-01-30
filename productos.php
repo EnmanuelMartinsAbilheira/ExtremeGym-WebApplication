@@ -37,216 +37,235 @@
 
 
     <main>
-        <div class="contenedor seccion">
+        <div class="contenedor seccion ">
 
-            <h2 class="titulo-producto">-Pre Treinos-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($PreTreinos = mysqli_fetch_assoc($resultado1)): ?>
-                    <div class="anuncio">
+        
+            <h2 class="titulo-producto">-Categorias-</h2>
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $PreTreinos['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $PreTreinos['titulo']; ?></h3>
-                            <p><?php echo $PreTreinos['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $PreTreinos['precio']; ?></p>
+            <div class="navegacion-principal-productos">
+                <a class="boton-verde-block" href="#PreTreino">Pre Treinos</a>
+                <a class="boton-verde-block" href="#Energisantes">Energisantes</a>
+                <a class="boton-verde-block" href="#PerdidadePeso">Perdida de Peso</a>
+                <a class="boton-verde-block" href="#Gigante">Gigante</a>
+                <a class="boton-verde-block" href="#ProductosExtremeGym">Productos Extreme Gym</a>
+                <a class="boton-verde-block" href="#Multivitaminicos">Multivitaminicos</a>
+                <a class="boton-verde-block" href="#Aveia">Aveia</a>
+                <a class="boton-verde-block" href="#Proteinas">Proteinas</a>
+                <a class="boton-verde-block" href="#GainersMassaMuscular">Gainers Massa Muscular</a>
+                <a class="boton-verde-block" href="#Antioxidantes">Antioxidantes</a>
+            </div>
 
-                            <a href="/producto.php?id=<?php echo $PreTreinos['id']; ?>" class="boton-verde-block">Ver Producto</a>
+            <div class="">
 
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                <h2 id="PreTreino" class="titulo-producto">-Pre Treinos-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($PreTreinos = mysqli_fetch_assoc($resultado1)): ?>
+                        <div class="anuncio tabla-precio">
 
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $PreTreinos['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $PreTreinos['titulo']; ?></h3>
+                                <p><?php echo $PreTreinos['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $PreTreinos['precio']; ?></p>
 
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Energisantes-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($Energisantes = mysqli_fetch_assoc($resultado2)): ?>
-                    <div class="anuncio">
+                                <a href="/producto.php?id=<?php echo $PreTreinos['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Energisantes['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $Energisantes['titulo']; ?></h3>
-                            <p><?php echo $Energisantes['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $Energisantes['precio']; ?></p>
-
-                            <a href="/producto.php?id=<?php echo $Energisantes['id']; ?>" class="boton-verde-block">Ver Producto</a>
-
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
 
 
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Perdida de Peso-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($PerdidaPeso = mysqli_fetch_assoc($resultado3)): ?>
-                    <div class="anuncio">
+                <!-- separacao categoria -->
+                <h2 id="Energisantes" class="titulo-producto">-Energisantes-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($Energisantes = mysqli_fetch_assoc($resultado2)): ?>
+                        <div class="anuncio tabla-precio">
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $PerdidaPeso['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $PerdidaPeso['titulo']; ?></h3>
-                            <p><?php echo $PerdidaPeso['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $PerdidaPeso['precio']; ?></p>
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Energisantes['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $Energisantes['titulo']; ?></h3>
+                                <p><?php echo $Energisantes['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $Energisantes['precio']; ?></p>
 
-                            <a href="/producto.php?id=<?php echo $PerdidaPeso['id']; ?>" class="boton-verde-block">Ver Producto</a>
+                                <a href="/producto.php?id=<?php echo $Energisantes['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
-
-
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Gigante-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($Gigante = mysqli_fetch_assoc($resultado4)): ?>
-                    <div class="anuncio">
-
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Gigante['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $Gigante['titulo']; ?></h3>
-                            <p><?php echo $Gigante['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $Gigante['precio']; ?></p>
-
-                            <a href="/producto.php?id=<?php echo $Gigante['id']; ?>" class="boton-verde-block">Ver Producto</a>
-
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
 
 
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Productos Extreme Gym-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($ProductosExtremeGym = mysqli_fetch_assoc($resultado5)): ?>
-                    <div class="anuncio">
+                <!-- separacao categoria -->
+                <h2 id="PerdidadePeso" class="titulo-producto">-Perdida de Peso-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($PerdidaPeso = mysqli_fetch_assoc($resultado3)): ?>
+                        <div class="anuncio tabla-precio">
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $ProductosExtremeGym['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $ProductosExtremeGym['titulo']; ?></h3>
-                            <p><?php echo $ProductosExtremeGym['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $ProductosExtremeGym['precio']; ?></p>
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $PerdidaPeso['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $PerdidaPeso['titulo']; ?></h3>
+                                <p><?php echo $PerdidaPeso['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $PerdidaPeso['precio']; ?></p>
 
-                            <a href="/producto.php?id=<?php echo $ProductosExtremeGym['id']; ?>" class="boton-verde-block">Ver Producto</a>
+                                <a href="/producto.php?id=<?php echo $PerdidaPeso['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
-
-
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Multivitaminicos-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($Multivitaminicos = mysqli_fetch_assoc($resultado6)): ?>
-                    <div class="anuncio">
-
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Multivitaminicos['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $Multivitaminicos['titulo']; ?></h3>
-                            <p><?php echo $Multivitaminicos['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $Multivitaminicos['precio']; ?></p>
-
-                            <a href="/producto.php?id=<?php echo $Multivitaminicos['id']; ?>" class="boton-verde-block">Ver Producto</a>
-
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
 
 
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Aveias-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($Aveias = mysqli_fetch_assoc($resultado7)): ?>
-                    <div class="anuncio">
+                <!-- separacao categoria -->
+                <h2 id="Gigante" class="titulo-producto">-Gigante-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($Gigante = mysqli_fetch_assoc($resultado4)): ?>
+                        <div class="anuncio tabla-precio">
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Aveias['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $Aveias['titulo']; ?></h3>
-                            <p><?php echo $Aveias['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $Aveias['precio']; ?></p>
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Gigante['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $Gigante['titulo']; ?></h3>
+                                <p><?php echo $Gigante['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $Gigante['precio']; ?></p>
 
-                            <a href="/producto.php?id=<?php echo $Aveias['id']; ?>" class="boton-verde-block">Ver Producto</a>
+                                <a href="/producto.php?id=<?php echo $Gigante['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
-
-
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Proteinas-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($Proteinas = mysqli_fetch_assoc($resultado8)): ?>
-                    <div class="anuncio">
-
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Proteinas['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $Proteinas['titulo']; ?></h3>
-                            <p><?php echo $Proteinas['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $Proteinas['precio']; ?></p>
-
-                            <a href="/producto.php?id=<?php echo $Proteinas['id']; ?>" class="boton-verde-block">Ver Producto</a>
-
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
 
 
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Gainers Massa Muscular-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($GainersMassaMuscular = mysqli_fetch_assoc($resultado9)): ?>
-                    <div class="anuncio">
+                <!-- separacao categoria -->
+                <h2 id="ProductosExtremeGym" class="titulo-producto">-Productos Extreme Gym-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($ProductosExtremeGym = mysqli_fetch_assoc($resultado5)): ?>
+                        <div class="anuncio tabla-precio">
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $GainersMassaMuscular['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $GainersMassaMuscular['titulo']; ?></h3>
-                            <p><?php echo $GainersMassaMuscular['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $GainersMassaMuscular['precio']; ?></p>
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $ProductosExtremeGym['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $ProductosExtremeGym['titulo']; ?></h3>
+                                <p><?php echo $ProductosExtremeGym['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $ProductosExtremeGym['precio']; ?></p>
 
-                            <a href="/producto.php?id=<?php echo $GainersMassaMuscular['id']; ?>" class="boton-verde-block">Ver Producto</a>
+                                <a href="/producto.php?id=<?php echo $ProductosExtremeGym['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
 
 
-            <!-- separacao categoria -->
-            <h2 class="titulo-producto">-Antioxidantes-</h2>
-            <div class="contenedor-anuncios">
-                <?php while($Antioxidantes = mysqli_fetch_assoc($resultado10)): ?>
-                    <div class="anuncio">
+                <!-- separacao categoria -->
+                <h2 id="" class="titulo-producto">-Multivitaminicos-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($Multivitaminicos = mysqli_fetch_assoc($resultado6)): ?>
+                        <div class="anuncio tabla-precio">
 
-                        <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Antioxidantes['imagen']; ?>" alt="anuncio">
-                        
-                        <div class="contenido-anuncio">
-                            <h3><?php echo $Antioxidantes['titulo']; ?></h3>
-                            <p><?php echo $Antioxidantes['descripcion']; ?></p>
-                            <p class="precio">€<?php echo $Antioxidantes['precio']; ?></p>
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Multivitaminicos['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $Multivitaminicos['titulo']; ?></h3>
+                                <p><?php echo $Multivitaminicos['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $Multivitaminicos['precio']; ?></p>
 
-                            <a href="/producto.php?id=<?php echo $Antioxidantes['id']; ?>" class="boton-verde-block">Ver Producto</a>
+                                <a href="/producto.php?id=<?php echo $Multivitaminicos['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
-                        </div> <!-- .contenido-anuncio -->
-                    </div> <!-- .anuncio -->
-                <?php endwhile; ?>
-            </div> <!-- .contenido-anuncio -->
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
 
+
+                <!-- separacao categoria -->
+                <h2 id="Multivitaminicos" class="titulo-producto">-Aveias-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($Aveias = mysqli_fetch_assoc($resultado7)): ?>
+                        <div class="anuncio tabla-precio">
+
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Aveias['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $Aveias['titulo']; ?></h3>
+                                <p><?php echo $Aveias['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $Aveias['precio']; ?></p>
+
+                                <a href="/producto.php?id=<?php echo $Aveias['id']; ?>" class="boton-verde-block">Ver Producto</a>
+
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
+
+
+                <!-- separacao categoria -->
+                <h2 id="Proteinas" class="titulo-producto">-Proteinas-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($Proteinas = mysqli_fetch_assoc($resultado8)): ?>
+                        <div class="anuncio tabla-precio">
+
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Proteinas['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $Proteinas['titulo']; ?></h3>
+                                <p><?php echo $Proteinas['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $Proteinas['precio']; ?></p>
+
+                                <a href="/producto.php?id=<?php echo $Proteinas['id']; ?>" class="boton-verde-block">Ver Producto</a>
+
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
+
+
+                <!-- separacao categoria -->
+                <h2 id="GainersMassaMuscular" class="titulo-producto">-Gainers Massa Muscular-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($GainersMassaMuscular = mysqli_fetch_assoc($resultado9)): ?>
+                        <div class="anuncio tabla-precio">
+
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $GainersMassaMuscular['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $GainersMassaMuscular['titulo']; ?></h3>
+                                <p><?php echo $GainersMassaMuscular['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $GainersMassaMuscular['precio']; ?></p>
+
+                                <a href="/producto.php?id=<?php echo $GainersMassaMuscular['id']; ?>" class="boton-verde-block">Ver Producto</a>
+
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
+
+
+                <!-- separacao categoria -->
+                <h2 id="Antioxidantes" class="titulo-producto">-Antioxidantes-</h2>
+                <div class="contenedor-anuncios">
+                    <?php while($Antioxidantes = mysqli_fetch_assoc($resultado10)): ?>
+                        <div class="anuncio tabla-precio">
+
+                            <img class="imgProductos" loading="lazy" src="/imagenes/<?php echo $Antioxidantes['imagen']; ?>" alt="anuncio">
+                            
+                            <div class="contenido-anuncio">
+                                <h3><?php echo $Antioxidantes['titulo']; ?></h3>
+                                <p><?php echo $Antioxidantes['descripcion']; ?></p>
+                                <p class="precio">€<?php echo $Antioxidantes['precio']; ?></p>
+
+                                <a href="/producto.php?id=<?php echo $Antioxidantes['id']; ?>" class="boton-verde-block">Ver Producto</a>
+
+                            </div> <!-- .contenido-anuncio -->
+                        </div> <!-- .anuncio -->
+                    <?php endwhile; ?>
+                </div> <!-- .contenido-anuncio -->
+
+            </div>
 
         </div> <!-- .contenido seccion -->
 

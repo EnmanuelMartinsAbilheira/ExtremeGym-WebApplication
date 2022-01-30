@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function(){
     eventListener();
 
     darkMode();
+    functionScrollNav();
 });
 
 function darkMode(){
@@ -60,4 +61,18 @@ function navegacionResponsive(){
     // } else {
     //     navegacion.classList.add('mostrar');
     // }
+}
+
+function scrollNav() {
+    const enlaces = document.querySelectorAll('.navegacion-principal a');
+
+    enlaces.forEach( enlace => {
+        enlace.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const seccionScroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScroll);
+            seccion.scrollIntoView({ behavior: "smooth"});
+        });
+    });
 }

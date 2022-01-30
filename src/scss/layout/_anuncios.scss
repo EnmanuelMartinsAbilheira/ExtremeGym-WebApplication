@@ -1,6 +1,6 @@
 @include tablet{
     .contenedor-anuncios{
-        @include grid(3, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
+        @include grid(3, 3rem) //3 columnas con separacionn de 2 rem que es igual a 20px
     }
     .contenedor-exercicios{
         @include grid(5, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
@@ -63,3 +63,12 @@
         }
     }
 }
+
+/* efecto sopre los precios  */
+.tabla-precio:hover {
+    transform: scale(0.9);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 50px #666;
+}
+
+/* efecto sopre los precios  */

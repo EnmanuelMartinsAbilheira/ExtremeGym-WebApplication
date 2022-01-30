@@ -51,7 +51,7 @@
 
         <div class="contenedor-anuncios">
 
-            <div class="anuncio">
+            <div class="anuncio tabla-precio">
                 <picture>
                     <source srcset="build/img/zumub.webp" type="image/webp">
                     <source srcset="build/img/zumub.jpg" type="image/jpeg">
@@ -69,7 +69,7 @@
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
 
-            <div class="anuncio">
+            <div class="anuncio tabla-precio">
                 <picture>
                     <source srcset="build/img/creatine.webp" type="image/webp">
                     <source srcset="build/img/creatine.jpg" type="image/jpeg">
@@ -102,7 +102,7 @@
                 </div> <!-- .contenido-anuncio -->
             </div> <!-- .anuncio -->
 
-            <div class="anuncio">
+            <div class="anuncio tabla-precio">
                 <picture>
                     <source srcset="build/img/c4.webp" type="image/webp">
                     <source srcset="build/img/c4.jpg" type="image/jpeg">
