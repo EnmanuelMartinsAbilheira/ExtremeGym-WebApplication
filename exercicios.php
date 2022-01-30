@@ -219,9 +219,10 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Cardio['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Cardio['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
+                            
                             <h3><?php echo $Cardio['titulo']; ?></h3>
                             <!--<p>Sabor banana para un mejor post entrenamiento</p>-->
 
@@ -238,7 +239,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Aulas['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Aulas['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Aulas['titulo']; ?></h3>
@@ -257,7 +258,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Peito['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Peito['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Peito['titulo']; ?></h3>
@@ -276,7 +277,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Dorsais['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Dorsais['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Dorsais['titulo']; ?></h3>
@@ -295,7 +296,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Hombros['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Hombros['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Hombros['titulo']; ?></h3>
@@ -314,7 +315,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Trapecio['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Trapecio['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Trapecio['titulo']; ?></h3>
@@ -333,7 +334,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Biceps['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Biceps['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Biceps['titulo']; ?></h3>
@@ -352,7 +353,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Triceps['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Triceps['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Triceps['titulo']; ?></h3>
@@ -371,7 +372,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Abdominales['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Abdominales['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Abdominales['titulo']; ?></h3>
@@ -390,7 +391,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Lumbar['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Lumbar['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Lumbar['titulo']; ?></h3>
@@ -409,7 +410,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Gluteus['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Gluteus['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Gluteus['titulo']; ?></h3>
@@ -428,7 +429,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Pernas['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Pernas['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Pernas['titulo']; ?></h3>
@@ -447,7 +448,7 @@
                     <!--producto 100%-->
                     <div class="anuncio">
 
-                        <img loading="lazy" src="/imagenes/<?php echo $Gemeos['imagen']; ?>" alt="anuncio">
+                        <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Gemeos['imagen']; ?>" alt="anuncio">
 
                         <div class="contenido-anuncio">
                             <h3><?php echo $Gemeos['titulo']; ?></h3>

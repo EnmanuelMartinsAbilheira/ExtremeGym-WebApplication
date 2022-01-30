@@ -10,7 +10,7 @@
 .anuncio{
     background-color: lighten($gris, 5);
     border: 0.5px solid lighten($grisOscuro, 10);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 
     //---- EFECTOS PRODUCTOS QUIE YO COLOQUE
     //border-radius: $separacion; 
@@ -19,8 +19,17 @@
     overflow: hidden;
     //---- EFECTOS PRODUCTOS QUE YO COLOQUE
 
+    .imgProductos{
+        max-width: auto;
+        max-height: 30rem;
+    }
+    .imgEjercicios{
+        max-width: auto;
+        max-height: 20rem;
+    }
+
     .contenido-anuncio{
-        padding: 2rem;
+        padding: 1.8rem;
     }
 
     h3, p{
@@ -34,6 +43,7 @@
     font-weight: $bold;
     font-size: 3rem;
 }
+
 .iconos-caracteristicas{
     display: flex;
     list-style: none;
