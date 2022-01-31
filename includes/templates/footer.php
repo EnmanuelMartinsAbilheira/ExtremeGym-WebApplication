@@ -2,11 +2,11 @@
     <footer class="footer seccion">
         <div class="contenedor contenedor-footer">
             <nav class="navegacion">
-                <a href="Nosotros.php">Nosotros</a>
-                <a href="Productos.php">Productos</a>
-                <a href="Imagenes.php">Imagenes</a>
-                <a href="Exercicios.php">Exercicios</a>
-                <a href="Contactanos.php">Contactanos</a>
+                <a href="Nosotros.php">Mais de Nós</a>
+                <a href="Productos.php">Produtos</a>
+                <a href="Imagenes.php">Imagens</a>
+                <a href="Exercicios.php">Exercícios</a>
+                <a href="Contactanos.php">Contacto</a>
             </nav>
         </div>
 

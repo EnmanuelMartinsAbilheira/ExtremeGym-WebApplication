@@ -7,7 +7,10 @@
 
 
     <main class="contenedor seccion">
-        <h1>Imagenes de nosotros</h1>
+        <h2 class="titulo-producto">-Histagram History-</h2>
+        
+        
+        <h2 class="titulo-producto">-Fotografias Sobre nos-</h2>
     </main>
 
 

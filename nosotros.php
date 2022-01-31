@@ -16,7 +16,7 @@
 
             <div id="mapa" class="mapa"></div>
 
-            <div class="imagen">
+            <div class="imagen tabla-precio">
                 <picture>
                     <source srcset="build/img/entradaA.webp" type="image/webp">
                     <source srcset="build/img/entradaA.png" type="image/png">
@@ -35,7 +35,7 @@
         
         <div class="contenido-nosotros"> <!-- Foto gym y describcion-->
 
-            <div class="imagen2">
+            <div class="imagen2 tabla-precio">
                 <picture>
                     <source srcset="build/img/GymDentro.webp" type="image/webp">
                     <source srcset="build/img/GymDentro.png" type="image/png">
@@ -63,7 +63,7 @@
                 <p class="QuienSomos">Josué Ruben Gomes de Sousa é Personal Trainer, Diretor Técnico e Monitor de Sala no Extreme Gym Fit. <br>Licenciado e Mestre na área e conta com mais de 20 anos de experiência. <br> Dedicado ao culto do corpo e atleta federado na I.F.B.B. há 15 anos o seu principal objetivo é ajudar os clientes a alcançarem as suas metas e vai em busca de resultados. <br>Trabalhando tanto com pessoas que queiram perder peso como com pessoas que queiram aumentar de peso e ganhar massa muscular, também faz correção de postura, trabalhando com pessoas que têm problemas de coluna e outras patologias.</p> 
             </div>
 
-            <div class="imagen2">
+            <div class="imagen2 tabla-precio">
                 <picture>
                     <source srcset="build/img/josueOlimpic.webp" type="image/webp">
                     <source srcset="build/img/josueOlimpic.png" type="image/png">
@@ -81,7 +81,7 @@
 
         <div class="contenido-nosotros-resultados"> <!--Experiencia professionar y describccion-->
 
-            <div class="imagen">
+            <div class="imagen tabla-precio2">
                 <picture>
                     <source srcset="build/img/RuiResultados.webp" type="image/webp">
                     <source srcset="build/img/RuiResultados.png" type="image/png">
@@ -90,7 +90,7 @@
                 <p class="QuienSomos">Rui Oliveira entrou no Extreme Gym Fit com 120 kg e tinha o objetivo de perder peso e ao fim de um ano atingiu a sua meta.</p> 
             </div>
 
-            <div class="imagen">
+            <div class="imagen tabla-precio2">
                 <picture>
                     <source srcset="build/img/DianaResultados.webp" type="image/webp">
                     <source srcset="build/img/DianaResultados.png" type="image/png">
@@ -99,7 +99,7 @@
                 <p class="QuienSomos">Diana Gonçalves entrou no Extreme Gym Fit com 81kg e tinha o objetivo de perder peso e aumentar a massa muscular. Ao fim de 6 meses já era possível verificar diferenças.</p> 
             </div>
 
-            <div class="imagen">
+            <div class="imagen tabla-precio2">
                 <picture>
                     <source srcset="build/img/NunoResultados.webp" type="image/webp">
                     <source srcset="build/img/NunoResultados.png" type="image/png">

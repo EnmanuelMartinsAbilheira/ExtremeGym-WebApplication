@@ -40,6 +40,7 @@
         <div class="contenedor seccion ">
 
         
+            <!-- nabvar categoria -->
             <h2 class="titulo-producto">-Categorias-</h2>
 
             <div class="navegacion-principal-productos">
@@ -54,6 +55,8 @@
                 <a class="boton-verde-block" href="#GainersMassaMuscular">Gainers Massa Muscular</a>
                 <a class="boton-verde-block" href="#Antioxidantes">Antioxidantes</a>
             </div>
+
+            <!-- nabvar categoria -->
 
             <div class="">
 

@@ -33,10 +33,10 @@
                 <div class="derecha">
                     <img class="dark-mode-boton" src="/build/img/dark-mode.svg">
                     <nav class="navegacion <?php echo isset($navEffect) ? 'navEffect' : ''; ?>">
-                        <a class="navEffect-a" href="nosotros.php"><span>Nosotros</span></a>
-                        <a class="navEffect-a" href="productos.php"><span>Productos</span></a>
-                        <a class="navEffect-a" href="imagenes.php"><span>Imagenes</span></a>
-                        <a class="navEffect-a" href="exercicios.php"><span>Exercicios</span></a>
+                        <a class="navEffect-a" href="nosotros.php"><span>Mais de Nós</span></a>
+                        <a class="navEffect-a" href="productos.php"><span>Produtos</span></a>
+                        <a class="navEffect-a" href="imagenes.php"><span>Imagens</span></a>
+                        <a class="navEffect-a" href="exercicios.php"><span>Exercícios</span></a>
                         <a class="navEffect-a" href="contacto.php"><span>Contacto</span></a>
                         <?php if($auth): ?>     
                             <a href="cerrar-sesion.php">Fechar Sesion</a>                   

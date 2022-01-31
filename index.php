@@ -21,7 +21,7 @@
             
             <div class="icono"> <!-- icono Alimentacion -->
                 <img src="/build/img/149655-ffeb3b.svg" alt="Icono Alimentacion" loading="lazy">
-                <h3>Alimentacion</h3>
+                <h3>Alimentaçao</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui at ullam ducimus nobis esse deleniti, facere possimus quas aut optio sapiente iste asperiores debitis eum? At odit eligendi eveniet.</p>
             </div>
 
@@ -33,7 +33,7 @@
 
             <div class="icono"><!-- icono dedicacion -->
                 <img src="/build/img/47188-ffeb3b.svg" alt="Icono Fuerza" loading="lazy">
-                <h3>Dedicacion</h3>
+                <h3>Dedicaçao</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias qui at ullam ducimus nobis esse deleniti, facere possimus quas aut optio sapiente iste asperiores debitis eum? At odit eligendi eveniet.</p>
             </div>
 
@@ -47,7 +47,7 @@
     </main>
 
     <section class="seccion contenedor">
-        <h2 class="titulo-producto">Os Productos Mais Vendidos Sao</h2>
+        <h2 class="titulo-producto">Os Produtos Mais Vendidos São</h2>
 
         <div class="contenedor-anuncios">
 
@@ -134,7 +134,7 @@
     <h2 class="titulo-producto">Nosso Horario</h2>
     <div class="iconos-7dias">
         <?php while($DiasHorario = mysqli_fetch_assoc($resultado)): ?>   
-            <div class="icono_dias">
+            <div class="icono_dias tabla-precio2">
                 <h3><?php echo $DiasHorario['dia_semana']; ?></h3>
                 
                 <p><?php echo $DiasHorario['descripcion_dia']; ?></p>
@@ -170,7 +170,7 @@
                         <p>Ejercicio: <span>Cardio</span> </p>
 
                         <p>
-                            unas de las mejores maquina para hacer un cardio que estimule varias zonas musculares al mismo tiempo y aumentar la resistencia.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laborum labore. Tempore nisi accusamus quo vero similique sunt, deserunt voluptas soluta dolorem provident 
                         </p>
                     </a>
                 </div>
@@ -191,7 +191,7 @@
                         <p>Ejercicio: <span>Cardio</span> </p>
 
                         <p>
-                            un Maquina que te permite elegir que modo de cardio quieres realizar con mas de 20 opciones de ejercicio para Aumento Resistencia, Perdida Peso, Quema de Calorias, ECT.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laborum labore. Tempore nisi accusamus quo vero similique sunt, deserunt voluptas soluta dolorem provident 
                         </p>
                     </a>
                 </div>
@@ -203,7 +203,7 @@
 
             <div class="testimonial">
                 <blockquote>
-                    Todos os Clientes do Extreme Gym sao parte de uma familia que nos une um sentimento de superacao internar, uma motivacao de chegar a ser a melhor forma de cada um de nos e chegar a ser aquela pessoa que nos queremos ser
+                    Todos os Clientes da Extreme Gym fazem parte de uma família que nos une com um sentimento de superação de estágio, uma motivação para nos esforçarmos por ser o melhor caminho para cada um de nós e nos esforçarmos para ser a pessoa que queremos ser.
                 </blockquote>
                 <p>- Josue -</p>
             </div>

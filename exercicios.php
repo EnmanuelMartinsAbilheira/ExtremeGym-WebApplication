@@ -217,7 +217,7 @@
             <div class="contenedor-exercicios">
                 <?php while($Cardio = mysqli_fetch_assoc($resultado1)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Cardio['imagen']; ?>" alt="anuncio">
 
@@ -237,7 +237,7 @@
             <div class="contenedor-exercicios">
                 <?php while($Aulas = mysqli_fetch_assoc($resultado2)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Aulas['imagen']; ?>" alt="anuncio">
 
@@ -252,11 +252,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Peito</h2>
+            <h2 id="Peito" class="titulo-producto">Peito</h2>
             <div class="contenedor-exercicios">
                 <?php while($Peito = mysqli_fetch_assoc($resultado3)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Peito['imagen']; ?>" alt="anuncio">
 
@@ -271,11 +271,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Dorsais</h2>
+            <h2 id="Dorsais" class="titulo-producto">Dorsais</h2>
             <div class="contenedor-exercicios">
                 <?php while($Dorsais = mysqli_fetch_assoc($resultado4)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Dorsais['imagen']; ?>" alt="anuncio">
 
@@ -290,11 +290,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Hombros</h2>
+            <h2 id="Hombros" class="titulo-producto">Hombros</h2>
             <div class="contenedor-exercicios">
                 <?php while($Hombros = mysqli_fetch_assoc($resultado5)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Hombros['imagen']; ?>" alt="anuncio">
 
@@ -309,11 +309,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Trapecio</h2>
+            <h2 id="Trapecio" class="titulo-producto">Trapecio</h2>
             <div class="contenedor-exercicios">
                 <?php while($Trapecio = mysqli_fetch_assoc($resultado6)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Trapecio['imagen']; ?>" alt="anuncio">
 
@@ -328,11 +328,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Biceps</h2>
+            <h2 id="Biceps" class="titulo-producto">Biceps</h2>
             <div class="contenedor-exercicios">
                 <?php while($Biceps = mysqli_fetch_assoc($resultado7)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Biceps['imagen']; ?>" alt="anuncio">
 
@@ -347,11 +347,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Triceps</h2>
+            <h2 id="Triceps" class="titulo-producto">Triceps</h2>
             <div class="contenedor-exercicios">
                 <?php while($Triceps = mysqli_fetch_assoc($resultado8)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Triceps['imagen']; ?>" alt="anuncio">
 
@@ -366,11 +366,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Abdominales</h2>
+            <h2 id="Abdominales" class="titulo-producto">Abdominales</h2>
             <div class="contenedor-exercicios">
                 <?php while($Abdominales = mysqli_fetch_assoc($resultado9)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Abdominales['imagen']; ?>" alt="anuncio">
 
@@ -385,11 +385,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Lumbar</h2>
+            <h2 id="Lumbar" class="titulo-producto">Lumbar</h2>
             <div class="contenedor-exercicios">
                 <?php while($Lumbar = mysqli_fetch_assoc($resultado10)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Lumbar['imagen']; ?>" alt="anuncio">
 
@@ -404,11 +404,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Gluteus</h2>
+            <h2 id="Gluteus" class="titulo-producto">Gluteus</h2>
             <div class="contenedor-exercicios">
                 <?php while($Gluteus = mysqli_fetch_assoc($resultado11)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Gluteus['imagen']; ?>" alt="anuncio">
 
@@ -423,11 +423,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Pernas</h2>
+            <h2 id="Pernas" class="titulo-producto">Pernas</h2>
             <div class="contenedor-exercicios">
                 <?php while($Pernas = mysqli_fetch_assoc($resultado12)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Pernas['imagen']; ?>" alt="anuncio">
 
@@ -442,11 +442,11 @@
 
 
             <!-- separacao categoria -->
-            <h2 class="titulo-producto">Gemeos</h2>
+            <h2 id="Gemeos" class="titulo-producto">Gemeos</h2>
             <div class="contenedor-exercicios">
                 <?php while($Gemeos = mysqli_fetch_assoc($resultado13)): ?>
                     <!--producto 100%-->
-                    <div class="anuncio">
+                    <div class="anuncio tabla-precio">
 
                         <img class="imgEjercicios" loading="lazy" src="/imagenes/<?php echo $Gemeos['imagen']; ?>" alt="anuncio">
 

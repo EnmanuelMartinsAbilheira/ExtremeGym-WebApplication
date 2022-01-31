@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function(){
     eventListener();
 
     darkMode();
-    functionScrollNav();
+
+    scrollNav();
 });
 
 function darkMode(){
@@ -75,4 +76,5 @@ function scrollNav() {
             seccion.scrollIntoView({ behavior: "smooth"});
         });
     });
+
 }
