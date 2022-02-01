@@ -10,7 +10,7 @@
             </nav>
         </div>
 
-        <p class="copyright">Todos os direitos reservados <?php echo date('Y'); ?> @copyright</p>
+        <p class="copyright">Todos os Direitos Reservados <?php echo date('Y'); ?> @copyright</p>
     </footer>
     
     <script src="/build/js/bundle.min.js"></script>
