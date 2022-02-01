@@ -13,7 +13,7 @@
             <img loading="lazy" src="build/img/imagescontacto.jpg" alt="imagen contacto">
         </picture> -->
 
-        <h2>Escolha a forma en la que deseja contactarnos</h2>
+        <h2>escolha a forma como deseja entrar em contato conosco, estamos sempre aqui para ajudar</h2>
 
         <form class="formulario">
                 <ul class="ulContacto">

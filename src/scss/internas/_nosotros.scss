@@ -30,7 +30,7 @@
 
 }
 .contenido-nosotros-resultados{
-
+    margin-bottom: 3rem;
     @include tablet{
         @include grid(3, 2rem);
     } 

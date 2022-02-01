@@ -89,16 +89,16 @@
 
             <div class="anuncio tabla-precio">
                 <picture>
-                    <source srcset="build/img/c4.webp" type="image/webp">
-                    <source srcset="build/img/c4.jpg" type="image/jpeg">
-                    <img loading="lazy" src="build/img/c4.jpg" alt="anuncio">
+                    <source srcset="build/img/toalhas.webp" type="image/webp">
+                    <source srcset="build/img/toalhas.jpg" type="image/jpeg">
+                    <img loading="lazy" src="build/img/toalhas.jpg" alt="anuncio">
                 </picture>
             
 
                 <div class="contenido-anuncio">
-                    <h3>C4 Cafeine</h3>
-                    <p>Mais energia para todo el entrenamiento</p>
-                    <p class="precio">€15,98</p>
+                    <h3>Toalha Extreme Gym</h3>
+                    <p>Uma Toalha numca pode faltar quando vais comecar a fazer o teu treino do dia se aidna nao tens nenhuma podes comprar umas personalizadas do Extreme Gym temos de muitos cores so tens de escolher e ja esta.</p>
+                    <p class="precio">€5,00</p>
 
                 
 

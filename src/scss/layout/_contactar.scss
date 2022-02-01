@@ -9,6 +9,7 @@
 }
  
 .imagen-contacto {
+    margin-top: 3rem;
     background-position: center center;
     background-size: cover;
     padding: $separacion * 1.1 0;
@@ -58,12 +59,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(201, 201, 201, 0.555);
+    background: rgba(201, 201, 201, 0.283);
     margin: 0 10px;
     text-decoration: none;
     font-size: 30px;
     border-radius: 50%;
-    color: #e2e2e2;
+    color: #ffffff;
     box-shadow: inset -1px -1px 2px rgba(0,0,0,0.2),
                 2px 2px 5px rgba(0,0,0,0.2);
     transition: 0.5s;
@@ -109,11 +110,11 @@
     background: #c32aa3;
 }
 
-.ulContacto .liContacto:nth-child(3) .aContacto::before{
+.ulContacto .liContacto:nth-child(4) .aContacto::before{
     background: #0962b6;
 }
 
-.ulContacto .liContacto:nth-child(4) .aContacto::before{
+.ulContacto .liContacto:nth-child(3) .aContacto::before{
     background: #00ff15;
 }
 
