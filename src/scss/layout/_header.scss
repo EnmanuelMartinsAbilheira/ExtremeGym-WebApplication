@@ -2,14 +2,14 @@
     height: auto;
     width: auto;
     background-image: url(../../../build/img/incognito-man-building-biceps-with-barbell.png);
-    //background-image: url(../../../build/img/logojosuewhatssap.png);
+    background-image: url(../../../build/img/logojosuewhatssap.png);
 
 }
 .webp .inicio{
     height: auto;
     width: auto;
     background-image: url(../../../build/img/incognito-man-building-biceps-with-barbell.webp);
-    //background-image: url(../../../build/img/logojosuewhatssap.webp);
+    background-image: url(../../../build/img/logojosuewhatssap.webp);
 }
 
 //h1 multiples nombres de la pagina index 
@@ -54,8 +54,8 @@
 
 
 .imagen-gym{
-    width: 130px;
-    height: 100px;
+    width: 150px;
+    height: 120px;
 }
 
 .header{
@@ -103,7 +103,7 @@
     a {
         display: block;
         text-align: center;
-        color: $blanco;
+        color: $grisOscuro;
         font-size: 1.6rem;
         padding: 1rem 0 3rem 0;
         border-radius: 3rem;
