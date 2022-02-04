@@ -87,7 +87,7 @@
                     <source srcset="build/img/RuiResultados.png" type="image/png">
                     <img loading="lazy" src="build/img/RuiResultados.png" alt="Entrada gym">
                 </picture>
-                <p class="QuienSomos">Rui Oliveira entrou no Extreme Gym Fit com 120 kg e tinha o objetivo de perder peso e ao fim de um ano atingiu a sua meta.</p> 
+                <p class="QuienSomos2">Rui Oliveira entrou no Extreme Gym Fit com 120 kg e tinha o objetivo de perder peso e ao fim de um ano atingiu a sua meta.</p> 
             </div>
 
             <div class="imagen tabla-precio2">
@@ -96,7 +96,7 @@
                     <source srcset="build/img/DianaResultados.png" type="image/png">
                     <img loading="lazy" src="build/img/DianaResultados.png" alt="Entrada gym">
                 </picture>
-                <p class="QuienSomos">Diana Gonçalves entrou no Extreme Gym Fit com 81kg e tinha o objetivo de perder peso e aumentar a massa muscular. Ao fim de 6 meses já era possível verificar diferenças.</p> 
+                <p class="QuienSomos2">Diana Gonçalves entrou no Extreme Gym Fit com 81kg e tinha o objetivo de perder peso e aumentar a massa muscular. Ao fim de 6 meses já era possível verificar diferenças.</p> 
             </div>
 
             <div class="imagen tabla-precio2">
@@ -105,7 +105,7 @@
                     <source srcset="build/img/NunoResultados.png" type="image/png">
                     <img loading="lazy" src="build/img/NunoResultados.png" alt="Entrada gym">
                 </picture>
-                <p class="QuienSomos">Nuno Lima entrou no Extreme Gym Fit com 56kg e tinha o objetivo de aumentar de peso e ganhar massa muscular. Ao fim de 3 meses já era possível verificar diferenças.</p> 
+                <p class="QuienSomos2">Nuno Lima entrou no Extreme Gym Fit com 56kg e tinha o objetivo de aumentar de peso e ganhar massa muscular. Ao fim de 3 meses já era possível verificar diferenças.</p> 
             </div>
 
         </div>

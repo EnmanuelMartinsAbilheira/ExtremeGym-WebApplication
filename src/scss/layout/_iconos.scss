@@ -42,12 +42,16 @@
 
 .icono{
     //---- ESTILOS COLOCAR ICONOS ESTILOS MIOS
-    border-radius: 6rem 6rem 2rem 3rem;
+    border-radius: 6rem 6rem 6rem 6rem;
     background-color: hsla(0, 0%, 43%, 0.12);
     //---- ESTILOS COLOCAR ICONOS ESTILOS MIOS
+    margin-top: 5rem;
+    margin-bottom: 7rem;
 
     img{
         height: 10rem;
+        margin-top: -5rem;
+        padding: 1rem;
 
     }
     h3{
@@ -55,5 +59,8 @@
     }
     p{
         text-align: center;
+        margin-top: -2rem;
+        font-size: 1.7rem;
+        padding: 1rem 1rem 1rem 1rem;
     }
 }

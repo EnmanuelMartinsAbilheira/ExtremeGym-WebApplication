@@ -59,8 +59,8 @@
 }
 
 .header{
-    background-color: $grisOscuro;
-    padding: 1rem 0 3rem 0;
+    background-color: $negro;
+    padding: 2rem 0 1rem 0;
 
     &.inicio{
 
@@ -90,6 +90,7 @@
         font-weight: $bold;
         line-height: 2;
         max-width: 60rem;
+        margin-top: 60rem
     }
 }
 

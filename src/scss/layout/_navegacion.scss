@@ -64,7 +64,7 @@
             width: 100%;
             height: 100%;
             display: inline-block;
-            background: #333333;
+            background: #000000;
             z-index: 10;
             display: flex;
             justify-content: center;
@@ -100,11 +100,10 @@
     display: flex;
     flex-direction: column;
     align-items: center; // para que este funcione debe tener el flex direction columns
-    padding-top: 3rem; 
     @include tablet{
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
 
     }
 }
