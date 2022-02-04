@@ -1,7 +1,12 @@
 <?php
+$DB_NAME = '';
+$DB_USER = '';
+$DB_PASSWORD = '';
+$DB_HOST = '';
+
 
 function conectarDb() : mysqli{
-    $db = mysqli_connect('localhost', 'root', 'root', 'bi-extremegym');
+    $db = mysqli_connect($DB_HOST, $DB_USER, $DB_PASSWORD, $DB_NAME);
 
     if(!$db){
         echo "Nao Se Conseguio conectar a Base de Dados";
