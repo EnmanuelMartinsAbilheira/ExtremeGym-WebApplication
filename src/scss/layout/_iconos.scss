@@ -8,6 +8,7 @@
         }
         .iconos-7dias{
             @include grid(4, 2rem); // 4 iconos con 20 px de tamaño
+            margin: 0rem 1rem;
         }
     }
 }

@@ -21,7 +21,7 @@
     $errores = [];
 
     $titulo = '';
-    $precio = '';
+/*     $precio = ''; */
     $descripcion = '';
     $categoriaId = '';
 
@@ -44,7 +44,7 @@
         // echo "</pre>";
 
         $titulo = mysqli_real_escape_string( $db, $_POST['titulo'] );
-        $precio = mysqli_real_escape_string( $db, $_POST['precio'] );
+/*         $precio = mysqli_real_escape_string( $db, $_POST['precio'] ); */
         $descripcion = mysqli_real_escape_string( $db, $_POST['descripcion'] );
         $categoriaId = mysqli_real_escape_string( $db, $_POST['categoria'] );
         $creado = date('Y/m/d');
@@ -56,9 +56,9 @@
         if(!$titulo){
             $errores[] = "Titulo do Producto Obligatorio";
         }
-        if(!$precio){
+/*         if(!$precio){
             $errores[] = "Valor do Producto Obligatorio";
-        }
+        } */
         if(!$descripcion){
             $errores[] = "Descripcao do Producto Obligatorio";
         }
@@ -100,7 +100,7 @@
 
 
             //insertare en la base de datos
-            $query = " INSERT INTO productos (titulo, precio, imagen, descripcion, creado, categoriaId ) VALUES ( '$titulo', '$precio', '$nombreImagen', '$descripcion', '$creado', '$categoriaId' ) ";
+            $query = " INSERT INTO productos (titulo, imagen, descripcion, creado, categoriaId ) VALUES ( '$titulo', '$nombreImagen', '$descripcion', '$creado', '$categoriaId' ) ";
 
             $resultado = mysqli_query($db, $query);
 
@@ -139,9 +139,9 @@
                 <label for="titulo">Titulo:</label>
                 <input type="text" id="titulo" name="titulo" placeholder="Titulo Producto" value="<?php echo $titulo; ?>">
 
-                <label for="precio">Preço:</label>
+<!--                 <label for="precio">Preço:</label>
                 <input type="number" id="precio" name="precio" placeholder="Preço Producto" value="<?php echo $precio; ?>">
-
+ -->
                 <label for="imagen">Imagen:</label>
                 <input type="file" id="imagen" accept="image/jpeg, image/png, image/webp" name="imagen">
 

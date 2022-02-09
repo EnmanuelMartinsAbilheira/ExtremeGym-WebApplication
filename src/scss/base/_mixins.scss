@@ -1,4 +1,10 @@
 /** Media Queries **/
+@mixin telefono2 {
+    @media (min-width: #{$telefono2}) {
+        @content;
+    }
+}
+
 @mixin telefono {
     @media (min-width: #{$telefono}) {
         @content;

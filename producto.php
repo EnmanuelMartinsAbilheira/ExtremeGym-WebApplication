@@ -37,9 +37,11 @@
         <img loading="lazy" src="/imagenes/<?php echo $producto['imagen']; ?>" alt="imagen pre treino">
 
         <div class="resumen-propiedad">
-            <p class="precio">€<?php echo $producto['precio']; ?></p>
 
             <p><?php echo $producto['descripcion']; ?></p>
+
+            <a href="/contacto.php" class="boton-verde-block">voce esta interessado em comprar?  Entre em contato conosco</a>
+
         </div>
     </main>
 

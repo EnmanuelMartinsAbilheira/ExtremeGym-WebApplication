@@ -45,13 +45,13 @@
 
             <div class="navegacion-principal-productos">
                 <a class="boton-verde-block" href="#PreTreino">Pre Treinos</a>
-                <a class="boton-verde-block" href="#Energisantes">Energisantes</a>
-                <a class="boton-verde-block" href="#PerdidadePeso">Perdida de Peso</a>
+                <a class="boton-verde-block" href="#Energisantes">Energizante</a>
+                <a class="boton-verde-block" href="#PerdidadePeso">Perda de Peso</a>
                 <a class="boton-verde-block" href="#Gigante">Gigante</a>
-                <a class="boton-verde-block" href="#ProductosExtremeGym">Productos Extreme Gym</a>
-                <a class="boton-verde-block" href="#Multivitaminicos">Multivitaminicos</a>
+                <a class="boton-verde-block" href="#ProductosExtremeGym">Produtos Extreme Gym</a>
+                <a class="boton-verde-block" href="#Multivitaminicos">Multivitamínicos</a>
                 <a class="boton-verde-block" href="#Aveia">Aveia</a>
-                <a class="boton-verde-block" href="#Proteinas">Proteinas</a>
+                <a class="boton-verde-block" href="#Proteinas">Proteínas</a>
                 <a class="boton-verde-block" href="#GainersMassaMuscular">Gainers Massa Muscular</a>
                 <a class="boton-verde-block" href="#Antioxidantes">Antioxidantes</a>
             </div>
@@ -70,7 +70,6 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $PreTreinos['titulo']; ?></h3>
                                 <p><?php echo $PreTreinos['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $PreTreinos['precio']; ?></p>
 
                                 <a href="/producto.php?id=<?php echo $PreTreinos['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -81,7 +80,7 @@
 
 
                 <!-- separacao categoria -->
-                <h2 id="Energisantes" class="titulo-producto">-Energisantes-</h2>
+                <h2 id="Energisantes" class="titulo-producto">-Energizante-</h2>
                 <div class="contenedor-anuncios">
                     <?php while($Energisantes = mysqli_fetch_assoc($resultado2)): ?>
                         <div class="anuncio tabla-precio">
@@ -91,7 +90,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $Energisantes['titulo']; ?></h3>
                                 <p><?php echo $Energisantes['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $Energisantes['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $Energisantes['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $Energisantes['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -102,7 +101,7 @@
 
 
                 <!-- separacao categoria -->
-                <h2 id="PerdidadePeso" class="titulo-producto">-Perdida de Peso-</h2>
+                <h2 id="PerdidadePeso" class="titulo-producto">-Perda de Peso-</h2>
                 <div class="contenedor-anuncios">
                     <?php while($PerdidaPeso = mysqli_fetch_assoc($resultado3)): ?>
                         <div class="anuncio tabla-precio">
@@ -112,7 +111,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $PerdidaPeso['titulo']; ?></h3>
                                 <p><?php echo $PerdidaPeso['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $PerdidaPeso['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $PerdidaPeso['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $PerdidaPeso['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -133,7 +132,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $Gigante['titulo']; ?></h3>
                                 <p><?php echo $Gigante['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $Gigante['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $Gigante['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $Gigante['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -154,7 +153,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $ProductosExtremeGym['titulo']; ?></h3>
                                 <p><?php echo $ProductosExtremeGym['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $ProductosExtremeGym['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $ProductosExtremeGym['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $ProductosExtremeGym['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -165,7 +164,7 @@
 
 
                 <!-- separacao categoria -->
-                <h2 id="" class="titulo-producto">-Multivitaminicos-</h2>
+                <h2 id="" class="titulo-producto">-Multivitamínicos-</h2>
                 <div class="contenedor-anuncios">
                     <?php while($Multivitaminicos = mysqli_fetch_assoc($resultado6)): ?>
                         <div class="anuncio tabla-precio">
@@ -175,7 +174,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $Multivitaminicos['titulo']; ?></h3>
                                 <p><?php echo $Multivitaminicos['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $Multivitaminicos['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $Multivitaminicos['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $Multivitaminicos['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -186,7 +185,7 @@
 
 
                 <!-- separacao categoria -->
-                <h2 id="Multivitaminicos" class="titulo-producto">-Aveias-</h2>
+                <h2 id="Multivitaminicos" class="titulo-producto">-Aveia-</h2>
                 <div class="contenedor-anuncios">
                     <?php while($Aveias = mysqli_fetch_assoc($resultado7)): ?>
                         <div class="anuncio tabla-precio">
@@ -196,7 +195,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $Aveias['titulo']; ?></h3>
                                 <p><?php echo $Aveias['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $Aveias['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $Aveias['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $Aveias['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -207,7 +206,7 @@
 
 
                 <!-- separacao categoria -->
-                <h2 id="Proteinas" class="titulo-producto">-Proteinas-</h2>
+                <h2 id="Proteinas" class="titulo-producto">-Proteínas-</h2>
                 <div class="contenedor-anuncios">
                     <?php while($Proteinas = mysqli_fetch_assoc($resultado8)): ?>
                         <div class="anuncio tabla-precio">
@@ -217,7 +216,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $Proteinas['titulo']; ?></h3>
                                 <p><?php echo $Proteinas['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $Proteinas['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $Proteinas['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $Proteinas['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -238,7 +237,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $GainersMassaMuscular['titulo']; ?></h3>
                                 <p><?php echo $GainersMassaMuscular['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $GainersMassaMuscular['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $GainersMassaMuscular['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $GainersMassaMuscular['id']; ?>" class="boton-verde-block">Ver Producto</a>
 
@@ -259,7 +258,7 @@
                             <div class="contenido-anuncio">
                                 <h3><?php echo $Antioxidantes['titulo']; ?></h3>
                                 <p><?php echo $Antioxidantes['descripcion']; ?></p>
-                                <p class="precio">€<?php echo $Antioxidantes['precio']; ?></p>
+                                <!-- <p class="precio">€<?php echo $Antioxidantes['precio']; ?></p> -->
 
                                 <a href="/producto.php?id=<?php echo $Antioxidantes['id']; ?>" class="boton-verde-block">Ver Producto</a>
 

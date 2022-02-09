@@ -49,7 +49,7 @@
     <section class="seccion contenedor">
         <h2 class="titulo-producto">Os Produtos Mais Vendidos São</h2>
 
-        <div class="contenedor-anuncios">
+        <div class="contenedor-anuncios-index">
 
             <div class="anuncio tabla-precio">
                 <picture>
