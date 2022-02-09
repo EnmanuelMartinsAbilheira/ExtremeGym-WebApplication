@@ -58,5 +58,3 @@
         <?php echo $inicio ? '<div class="wrapper"><h1>Extreme Gym <span class="wrapper-h1-span"></span></h1></div>' : ''; ?>
     </div>
 </header>
-
-<div class="content">
