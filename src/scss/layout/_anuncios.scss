@@ -1,12 +1,12 @@
 @include telefono2{
     .contenedor-anuncios{
-        @include grid(1, 1rem);
+        @include grid(1, 0.5rem);
         @include tablet{
             @include grid(4, 1.5rem) //3 columnas con separacionn de 2 rem que es igual a 20px
         }
     }
     .contenedor-exercicios{        
-        @include grid(2, 2rem);
+        @include grid(2, 0.8rem);
         @include tablet{
             @include grid(5, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
         }
@@ -50,12 +50,12 @@
     //---- EFECTOS PRODUCTOS QUE YO COLOQUE
 
     .imgProductos{
-        max-width: auto;
-        max-height: 30rem;
+        max-width: auto; // ancho 
+        max-height: auto; // largo
     }
     .imgEjercicios{
-        max-width: auto;
-        max-height: 20rem;
+        max-width: auto;  // ancho 
+        max-height: 20rem; // largo
     }
 
     .contenido-anuncio{
