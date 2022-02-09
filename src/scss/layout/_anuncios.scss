@@ -1,16 +1,34 @@
 @include telefono2{
     .contenedor-anuncios{
         @include grid(1, 0.5rem);
-        @include tablet{
-            @include grid(4, 1.5rem) //3 columnas con separacionn de 2 rem que es igual a 20px
+        @include telefono{
+           @include grid(2, 1rem); 
+            @include tablet{
+                @include grid(3, 1.5rem); //3 columnas con separacionn de 2 rem que es igual a 20px
+                @include desktop2{
+                    @include grid(4, 2.5rem); //3 columnas con separacionn de 2 rem que es igual a 20px   
+                }
+            }
         }
     }
+    .contenedor-exercicios{
+        @include grid(1, 0.5rem);
+        @include telefono{
+           @include grid(2, 1rem); 
+            @include tablet{
+                @include grid(4, 1.5rem); //3 columnas con separacionn de 2 rem que es igual a 20px
+                @include desktop2{
+                    @include grid(5, 3rem); //3 columnas con separacionn de 2 rem que es igual a 20px   
+                }
+            }
+        }
+    }/* 
     .contenedor-exercicios{        
         @include grid(2, 0.8rem);
         @include tablet{
             @include grid(5, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
         }
-    }
+    } */
 }
 
 @include tablet{
@@ -49,14 +67,14 @@
     overflow: hidden;
     //---- EFECTOS PRODUCTOS QUE YO COLOQUE
 
-    .imgProductos{
+    .imgProductos, .imgEjercicios{
         max-width: auto; // ancho 
         max-height: auto; // largo
-    }
+    }/* 
     .imgEjercicios{
         max-width: auto;  // ancho 
-        max-height: 20rem; // largo
-    }
+        max-height: auto; // largo
+    } */
 
     .contenido-anuncio{
         padding: 1.8rem;

@@ -22,6 +22,12 @@
         @content;
     }
 }
+  
+@mixin desktop2 {
+    @media (min-width: #{$desktop2}) {
+        @content;
+    }
+}
 @mixin grid($columnas, $espaciado ) {
     display: grid;
     gap: $espaciado;
