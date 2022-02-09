@@ -1,6 +1,6 @@
 @include telefono2{
     .contenedor-anuncios{
-        @include grid(2, 2rem);
+        @include grid(1, 1rem);
         @include tablet{
             @include grid(4, 1.5rem) //3 columnas con separacionn de 2 rem que es igual a 20px
         }
