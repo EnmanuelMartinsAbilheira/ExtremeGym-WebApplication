@@ -5,6 +5,11 @@
             @include grid(4, 1.5rem) //3 columnas con separacionn de 2 rem que es igual a 20px
         }
     }
+    
+    .contenedor-anuncios-index{
+        @include grid(3, 2rem) //3 columnas con separacionn de 2 rem que es igual a 20px
+    }
+    
     .contenedor-exercicios{        
         @include grid(2, 2rem);
         @include tablet{
@@ -14,9 +19,7 @@
 }
 
 @include tablet{
-    .contenedor-anuncios-index{
-        @include grid(3, 1rem) //3 columnas con separacionn de 2 rem que es igual a 20px
-    }
+    
 
 }
 

@@ -62,7 +62,7 @@
                 <div class="contenido-anuncio">
                     <h3>100% WHEY</h3>
                     <p>proteína completa, altamente biodisponível, crescimento e recuperação muscular com sabor a banana</p>
-                    <p class="precio">€28,00</p>
+                    <!-- <p class="precio">€28,00</p> -->
 
                     <a href="producto.php?id=14" class="boton-verde-block">Ver Producto</a>
 
@@ -80,7 +80,7 @@
                 <div class="contenido-anuncio">
                     <h3>Personal Trainer</h3>
                     <p>se você realmente quiser tirar o máximo proveito de seus treinos, um treinador é um ótimo investimento. A melhoria em seus níveis de saúde e condicionamento físico pode ter um pagamento a longo prazo em qualidade de vida e até mesmo diminuir os custos com saúde.</p>
-                    <p class="precio">€200,00</p> 
+                    <!-- <p class="precio">€200,00</p>  -->
 
                     <a href="productos.php" class="boton-verde-block">Ver Producto</a>
 
@@ -98,7 +98,7 @@
                 <div class="contenido-anuncio">
                     <h3>Toalha Extreme Gym</h3>
                     <p>Uma Toalha numca pode faltar quando vais comecar a fazer o teu treino do dia se aidna nao tens nenhuma podes comprar umas personalizadas do Extreme Gym temos de muitos cores so tens de escolher e ja esta.</p>
-                    <p class="precio">€5,00</p>
+                    <!-- <p class="precio">€5,00</p> -->
 
                 
 
