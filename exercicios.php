@@ -290,7 +290,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Hombros" class="titulo-producto">Hombros</h2>
+            <h2 id="Hombros" class="titulo-producto">Ombros</h2>
             <div class="contenedor-exercicios">
                 <?php while($Hombros = mysqli_fetch_assoc($resultado5)): ?>
                     <!--producto 100%-->
@@ -309,7 +309,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Trapecio" class="titulo-producto">Trapecio</h2>
+            <h2 id="Trapecio" class="titulo-producto">Trapézio</h2>
             <div class="contenedor-exercicios">
                 <?php while($Trapecio = mysqli_fetch_assoc($resultado6)): ?>
                     <!--producto 100%-->
@@ -328,7 +328,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Biceps" class="titulo-producto">Biceps</h2>
+            <h2 id="Biceps" class="titulo-producto">Bíceps</h2>
             <div class="contenedor-exercicios">
                 <?php while($Biceps = mysqli_fetch_assoc($resultado7)): ?>
                     <!--producto 100%-->
@@ -347,7 +347,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Triceps" class="titulo-producto">Triceps</h2>
+            <h2 id="Triceps" class="titulo-producto">Tríceps</h2>
             <div class="contenedor-exercicios">
                 <?php while($Triceps = mysqli_fetch_assoc($resultado8)): ?>
                     <!--producto 100%-->
@@ -366,7 +366,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Abdominales" class="titulo-producto">Abdominales</h2>
+            <h2 id="Abdominales" class="titulo-producto">Abdômen</h2>
             <div class="contenedor-exercicios">
                 <?php while($Abdominales = mysqli_fetch_assoc($resultado9)): ?>
                     <!--producto 100%-->
@@ -385,7 +385,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Lumbar" class="titulo-producto">Lumbar</h2>
+            <h2 id="Lumbar" class="titulo-producto">Lombar</h2>
             <div class="contenedor-exercicios">
                 <?php while($Lumbar = mysqli_fetch_assoc($resultado10)): ?>
                     <!--producto 100%-->
@@ -404,7 +404,7 @@
 
 
             <!-- separacao categoria -->
-            <h2 id="Gluteus" class="titulo-producto">Gluteus</h2>
+            <h2 id="Gluteus" class="titulo-producto">Glúteo</h2>
             <div class="contenedor-exercicios">
                 <?php while($Gluteus = mysqli_fetch_assoc($resultado11)): ?>
                     <!--producto 100%-->
